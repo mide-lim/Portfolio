@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { ActionLink } from "@/components/ui/action-link";
 export default function NotFound() {
   return (
     <div className="page-hero">
@@ -8,9 +8,7 @@ export default function NotFound() {
         <br />
         <em>não encontrada.</em>
       </h1>
-      <Link className="button" href="/">
-        Voltar para Home →
-      </Link>
+      <ActionLink href="/">Voltar para Home →</ActionLink>
     </div>
   );
 }

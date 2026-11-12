@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { ActionLink } from "@/components/ui/action-link";
 import { services as copy } from "@/content/pages";
 export const metadata = { title: "Services" };
 
@@ -31,9 +31,9 @@ export default function Page() {
           <div>
             <h2>{copy.automacao_ia}</h2>
             <p>{copy.explorar_integracoes_para_processamento_de_dados}</p>
-            <Link className="text-link" href="/portfolio/megabrain/">
+            <ActionLink variant="text" href="/portfolio/megabrain/">
               {copy.veja_o_mega_brain}
-            </Link>
+            </ActionLink>
           </div>
         </article>
         <article>
@@ -41,9 +41,9 @@ export default function Page() {
           <div>
             <h2>{copy.infraestrutura}</h2>
             <p>{copy.organizacao_de_servicos_em_containers_e}</p>
-            <Link className="text-link" href="/portfolio/inception/">
+            <ActionLink variant="text" href="/portfolio/inception/">
               {copy.veja_o_inception}
-            </Link>
+            </ActionLink>
           </div>
         </article>
       </div>

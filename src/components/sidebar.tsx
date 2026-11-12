@@ -1,3 +1,4 @@
+import { ActionLink } from "@/components/ui/action-link";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/content/site";
@@ -41,9 +42,9 @@ export function Sidebar() {
         </a>
         <Link href="/about/">Trajetória ↗</Link>
       </div>
-      <Link className="button full" href="/portfolio/">
+      <ActionLink fullWidth href="/portfolio/">
         {site.projectAction} <span>↗</span>
-      </Link>
+      </ActionLink>
     </aside>
   );
 }

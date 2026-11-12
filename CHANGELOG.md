@@ -2,6 +2,16 @@
 
 Este arquivo registra os marcos e decisões do portfólio. Os commits do GitHub permitem acompanhar as alterações a partir da importação da prévia.
 
+## 2026-11-12 — Design system documentado
+
+- Centralizados tokens semânticos de cores e fontes, preservando os valores do site.
+- Criado ActionLink reutilizável e aplicado às ações internas existentes.
+- Adicionado guia visual em /design-system/ com amostras reais e glossário.
+- Documentados fundamentos, componentes, escrita, qualidade e decisões.
+- Acrescentadas instruções para agentes em AGENTS.md.
+- Mantidas propostas editoriais e escala de espaços como itens de revisão.
+- Criada ilustração explicativa de tokens para a documentação.
+
 ## 2026-11-12 — Aplicação Next.js e retrato pessoal
 
 - Migrado o visual aprovado para Next.js App Router, TypeScript e Tailwind CSS.

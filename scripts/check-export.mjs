@@ -9,6 +9,7 @@ const routes = [
   "/portfolio/",
   "/blog/",
   "/services/",
+  "/design-system/",
   ...[
     "megabrain",
     "cub3d",

@@ -1,3 +1,4 @@
+import { ActionLink } from "@/components/ui/action-link";
 import Link from "next/link";
 import { home as copy } from "@/content/pages";
 import { ProjectGrid } from "@/components/project-grid";
@@ -23,14 +24,14 @@ export default function Page() {
           {copy.hoje_explorando_novas_possibilidades_com_ia}
         </p>
         <div className="hero-actions">
-          <Link className="button" href="/#destaques">
+          <ActionLink href="/#destaques">
             {copy.explorar_projetos}
             <span>{copy.symbol}</span>
-          </Link>
-          <Link className="text-link" href="/about/">
+          </ActionLink>
+          <ActionLink variant="text" href="/about/">
             {copy.conheca_minha_trajetoria}
             <span>{copy.symbol_2}</span>
-          </Link>
+          </ActionLink>
         </div>
         <div className="hero-bottom">
           <span>{copy.c_c_software_ia}</span>
@@ -50,9 +51,9 @@ export default function Page() {
               <em>{copy.funcionamento}</em>
             </h2>
           </div>
-          <Link className="text-link" href="/portfolio/">
+          <ActionLink variant="text" href="/portfolio/">
             {copy.todos_os_projetos}
-          </Link>
+          </ActionLink>
         </div>
         <ProjectGrid featured />
       </section>
@@ -88,9 +89,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <Link className="text-link" href="/about/">
+        <ActionLink variant="text" href="/about/">
           {copy.explore_minha_trajetoria}
-        </Link>
+        </ActionLink>
       </section>
       <section className="section">
         <div className="section-heading">
@@ -102,9 +103,9 @@ export default function Page() {
               <em>{copy.construir_registrar}</em>
             </h2>
           </div>
-          <Link className="text-link" href="/blog/">
+          <ActionLink variant="text" href="/blog/">
             {copy.abrir_caderno}
-          </Link>
+          </ActionLink>
         </div>
         <Link className="article-preview" href="/blog/">
           <span className="article-mark">{copy.symbol_4}</span>
@@ -124,9 +125,9 @@ export default function Page() {
           {copy.merece}
           <em>{copy.ganhar_forma}</em>
         </h2>
-        <Link className="button" href="/services/">
+        <ActionLink href="/services/">
           {copy.explore_as_possibilidades}
-        </Link>
+        </ActionLink>
       </div>
     </section>
   );

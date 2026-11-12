@@ -1,0 +1,77 @@
+/* Canonical visual values. Alias names preserve the approved portfolio CSS. */
+:root,
+[data-design-theme] {
+  --palette-charcoal: #1e1e1c;
+  --palette-sand: #d8cbb3;
+  --palette-electric-blue: #2f6bff;
+  --palette-cream: #f3eee3;
+  --palette-ink: #111111;
+  --palette-burnt-orange: #d9541e;
+  --font-body: "DM Sans", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --portrait-background: var(--palette-sand);
+  --radius-profile: 30px;
+  --radius-image: 18px;
+  --radius-project: 23px;
+  --radius-action: 30px;
+  --duration-interaction: 250ms;
+  --duration-reveal: 650ms;
+  /* Proposed spacing vocabulary for new work; legacy spacing is preserved. */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --bg: var(--background);
+  --panel: var(--surface);
+  --text: var(--foreground);
+  --muted: var(--muted-foreground);
+  --line: var(--border);
+  --accent: var(--foreground);
+  --accent2: var(--foreground);
+  --nav: var(--navigation-background);
+  --cta: var(--primary);
+  --cta-text: var(--primary-foreground);
+}
+:root,
+[data-design-theme="dark"] {
+  color-scheme: dark;
+  --background: var(--palette-charcoal);
+  --surface: #242420;
+  --foreground: var(--palette-sand);
+  --muted-foreground: #d8cbb3b8;
+  --border: #d8cbb333;
+  --navigation-background: #1e1e1cf2;
+  --primary: var(--palette-electric-blue);
+  --primary-foreground: #ffffff;
+  --cover: var(--palette-sand);
+  --cover-ink: var(--palette-charcoal);
+}
+:root[data-palette="cream"],
+[data-design-theme="light"] {
+  color-scheme: light;
+  --background: var(--palette-cream);
+  --surface: #ebe5d8;
+  --foreground: var(--palette-ink);
+  --muted-foreground: #111111b3;
+  --border: #1111112b;
+  --navigation-background: #f3eee3f2;
+  --primary: var(--palette-burnt-orange);
+  --primary-foreground: var(--palette-ink);
+  --cover: var(--palette-ink);
+  --cover-ink: var(--palette-cream);
+}
+/* Semantic utilities available to new Tailwind components. */
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --color-portrait: var(--portrait-background);
+}

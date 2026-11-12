@@ -4,6 +4,12 @@ Portfólio pessoal para apresentar minha trajetória em Segurança da Informaç�
 
 [Site em desenvolvimento](https://midelim-portfolio-preview.creamgown2.chatgpt.site/) · [Histórico](CHANGELOG.md)
 
+## Design system
+
+[Guia visual com exemplos](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) · [Documentação do sistema](DESIGN.md)
+
+O guia explica tokens, temas, tipografia, componentes e decisões usando elementos do próprio site. A documentação distingue o aprovado, o implementado e as propostas para revisão conjunta.
+
 ## Aplicação atual
 
 Next.js com App Router, TypeScript e Tailwind CSS. A aplicação fica em `src/`; cada seção tem sua própria URL. O build gera uma versão estática do mesmo código para a prévia hospedada.
