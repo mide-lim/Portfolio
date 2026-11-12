@@ -71,9 +71,3 @@ A prévia atual usa CSS, IntersectionObserver e rolagem suave nativa. A integra�
 ## Verificação deste marco
 
 A sintaxe dos scripts foi verificada com Node.js. A lógica de temas foi testada para preferência do dispositivo, escolha manual, persistência, migração das paletas anteriores e preservação da rota. A publicação da prévia foi confirmada. A revisão visual automatizada no navegador ficou pendente por indisponibilidade do ambiente.
-
-## Referências visuais e imagem
-
-- [Braxton](https://mixdesign.dev/themeforest/braxton/index-solid-color.html) — composição da Home e cartão lateral.
-- [Andrew](https://uithemez.com/i/andrew/about.html) — organização das páginas internas.
-- [Fotografia ilustrativa de hardware no Unsplash](https://unsplash.com/photos/a-close-up-of-a-computer-osADpb_0odE).
