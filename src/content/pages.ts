@@ -1,0 +1,161 @@
+// Textos preservados da prévia aprovada. Próxima etapa: revisão editorial.
+
+export const home = {
+  prazer_michel_marques: " PRAZER, MICHEL MARQUES",
+  curiosidade: "Curiosidade",
+  que_vira: "que vira",
+  construcao: "construção.",
+  da_seguranca_da_informacao_a_engenharia:
+    "Da segurança da informação à engenharia de software.",
+  hoje_explorando_novas_possibilidades_com_ia:
+    "Hoje, explorando novas possibilidades com IA.",
+  explorar_projetos: "Explorar projetos ",
+  symbol: "↗",
+  conheca_minha_trajetoria: "Conheça minha trajetória ",
+  symbol_2: "→",
+  c_c_software_ia: "C · C++ · SOFTWARE · IA",
+  role_para_explorar: "ROLE PARA EXPLORAR ",
+  symbol_3: "↓",
+  portfolio: "PORTFOLIO",
+  ideias_em: "Ideias em",
+  funcionamento: "funcionamento.",
+  todos_os_projetos: "Todos os projetos ↗",
+  about: "ABOUT",
+  um_percurso: "Um percurso.",
+  muitas_conexoes: "Muitas conexões.",
+  entender_como_as_coisas_funcionam_me:
+    "Entender como as coisas funcionam me levou da segurança da informação à construção de software. Hoje, essa curiosidade também orienta meus estudos em IA e organização do conhecimento.",
+  formacao_superior: "FORMAÇÃO SUPERIOR",
+  seguranca_da_informacao: "Segurança da Informação",
+  desde_2024: "DESDE 2024",
+  "42_rio": "42 Rio",
+  aprendizado_entre_pares_e_projetos_em:
+    "Aprendizado entre pares e projetos em C e C++.",
+  projetos_autorais: "PROJETOS AUTORAIS",
+  ia_aplicada: "IA aplicada",
+  processamento_multimodal_e_organizacao_de_acervos:
+    "Processamento multimodal e organização de acervos.",
+  explore_minha_trajetoria: "Explore minha trajetória →",
+  blog: "BLOG",
+  aprender: "Aprender.",
+  construir_registrar: "Construir. Registrar.",
+  abrir_caderno: "Abrir caderno ↗",
+  symbol_4: "↳",
+  em_preparacao_engenharia_de_software:
+    "EM PREPARAÇÃO · ENGENHARIA DE SOFTWARE",
+  o_que_acontece_entre_digitar_um:
+    "O que acontece entre digitar um comando e vê-lo executar?",
+  uma_pauta_a_partir_da_experiencia:
+    "Uma pauta a partir da experiência com o Minishell.",
+  vamos_construir: "VAMOS CONSTRUIR",
+  uma_boa_ideia: "Uma boa ideia",
+  merece: "merece ",
+  ganhar_forma: "ganhar forma.",
+  explore_as_possibilidades: "Explore as possibilidades ↗",
+};
+
+export const about = {
+  about: "ABOUT",
+  o_percurso: "O percurso",
+  por_tras: "por trás",
+  do_codigo: "do código.",
+  seguranca_da_informacao_formacao_pratica_na:
+    "Segurança da informação, formação prática na 42 Rio e projetos autorais que aproximam software e conhecimento.",
+  michel: "Michel",
+  marques: "Marques.",
+  minha_trajetoria_passa_por_compreender_sistemas:
+    "Minha trajetória passa por compreender sistemas, construir ferramentas e explorar formas de organizar informação.",
+  sou_graduado_em_seguranca_da_informacao:
+    "Sou graduado em Segurança da Informação e estudo engenharia de software na 42 Rio. Aprender por meio de projetos me coloca diante de problemas concretos, da gestão de memória em C à concorrência e à infraestrutura de aplicações.",
+  nos_projetos_autorais_investigo_como_a:
+    "Nos projetos autorais, investigo como a IA pode ajudar a transformar conteúdo disperso em conhecimento acessível. O MEGA-BRAIN faz parte dessa exploração.",
+  formacao_pratica: "FORMAÇÃO & PRÁTICA",
+  uma_trajetoria: "Uma trajetória",
+  em_desenvolvimento: "em desenvolvimento.",
+  graduacao: "GRADUAÇÃO",
+  seguranca_da_informacao: "Segurança da Informação",
+  o_ponto_de_partida_da_minha:
+    "O ponto de partida da minha formação em tecnologia.",
+  "2024_atual": "2024 — ATUAL",
+  "42_rio_engenharia_de_software": "42 Rio · Engenharia de software",
+  common_core_em_andamento_com_87:
+    "Common Core em andamento, com 87% de conclusão no histórico de novembro de 2026. Projetos em programação de sistemas, gráficos, redes, C++ e infraestrutura.",
+  c: "C",
+  c_2: "C++",
+  unix: "Unix",
+  docker: "Docker",
+  projetos_autorais: "PROJETOS AUTORAIS",
+  ia_organizacao_do_conhecimento: "IA & organização do conhecimento",
+  estudos_e_experimentos_com_analise_multimodal:
+    "Estudos e experimentos com análise multimodal e organização de informação, incluindo o MEGA-BRAIN.",
+  competencias_em_contexto: "COMPETÊNCIAS EM CONTEXTO",
+  aprendizado: "Aprendizado",
+  que_aparece_nos_projetos: "que aparece nos projetos.",
+  programacao_de_sistemas: "Programação de sistemas",
+  minishell_processos_pipes_e_sinais: "Minishell · processos, pipes e sinais ↗",
+  computacao_grafica: "Computação gráfica",
+  cub3d_raycasting_e_interacao: "Cub3D · raycasting e interação ↗",
+  concorrencia: "Concorrência",
+  philosophers_threads_e_mutexes: "Philosophers · threads e mutexes ↗",
+  infraestrutura: "Infraestrutura",
+  inception_containers_e_servicos: "Inception · containers e serviços ↗",
+};
+
+export const portfolio = {
+  portfolio: "PORTFOLIO",
+  construir_e: "Construir é",
+  aprender: "aprender.",
+  projetos_autorais_e_trabalhos_da_42:
+    "Projetos autorais e trabalhos da 42 Rio. Cada um registra uma etapa, um desafio e uma forma de pensar.",
+};
+
+export const blog = {
+  blog: "BLOG",
+  um_caderno: "Um caderno",
+  em_construcao: "em construção.",
+  espaco_para_compartilhar_decisoes_descobertas_e:
+    "Espaço para compartilhar decisões, descobertas e aprendizados durante os projetos.",
+  as_primeiras_publicacoes_estao_em_preparacao:
+    "As primeiras publicações estão em preparação. Estas são as pautas propostas para abrir o caderno.",
+  sistemas_pauta_proposta: "SISTEMAS · PAUTA PROPOSTA",
+  do_comando: "Do comando",
+  ao_processo: "ao processo.",
+  parsing_redirecionamentos_e_execucao_a_partir:
+    "Parsing, redirecionamentos e execução a partir do Minishell.",
+  conheca_o_projeto: "Conheça o projeto ↗",
+  computacao_grafica_pauta_proposta: "COMPUTAÇÃO GRÁFICA · PAUTA PROPOSTA",
+  um_mundo_3d: "Um mundo 3D",
+  feito_de_raios: "feito de raios.",
+  como_o_raycasting_transforma_um_mapa:
+    "Como o raycasting transforma um mapa em uma visão em primeira pessoa.",
+  ia_aplicada_pauta_proposta: "IA APLICADA · PAUTA PROPOSTA",
+  de_videos_salvos: "De vídeos salvos",
+  a_um_acervo: "a um acervo.",
+  os_desafios_de_processar_conteudo_multimodal:
+    "Os desafios de processar conteúdo multimodal e registrar cada resultado.",
+};
+
+export const services = {
+  services: "SERVICES",
+  da_ideia: "Da ideia",
+  a_implementacao: "à implementação.",
+  areas_em_que_meus_estudos_e:
+    "Áreas em que meus estudos e projetos podem contribuir para uma colaboração.",
+  symbol: "↗",
+  software_prototipos: "Software & protótipos",
+  transformar_requisitos_em_uma_primeira_versao:
+    "Transformar requisitos em uma primeira versão utilizável, com atenção ao funcionamento e à organização do código.",
+  desenvolvimento: "Desenvolvimento",
+  prototipagem: "Prototipagem",
+  automacao_ia: "Automação & IA",
+  explorar_integracoes_para_processamento_de_dados:
+    "Explorar integrações para processamento de dados e tarefas repetitivas, a partir de problemas concretos.",
+  veja_o_mega_brain: "Veja o MEGA-BRAIN →",
+  infraestrutura: "Infraestrutura",
+  organizacao_de_servicos_em_containers_e:
+    "Organização de serviços em containers e ambientes para executar aplicações.",
+  veja_o_inception: "Veja o Inception →",
+  conheca_meu_trabalho: "Conheça meu trabalho",
+  mais_de_perto: "mais de perto.",
+  meu_github: "Meu GitHub ↗",
+};

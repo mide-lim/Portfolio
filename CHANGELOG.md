@@ -2,6 +2,17 @@
 
 Este arquivo registra os marcos e decisões do portfólio. Os commits do GitHub permitem acompanhar as alterações a partir da importação da prévia.
 
+## 2026-11-12 — Aplicação Next.js e retrato pessoal
+
+- Migrado o visual aprovado para Next.js App Router, TypeScript e Tailwind CSS.
+- Criadas cinco rotas principais e seis páginas de projetos, com navegação compartilhada.
+- Incluído o retrato com transparência e fundo Sand nos dois modos, incluindo a versão móvel.
+- Separados textos e projetos em `src/content/` para a próxima revisão editorial.
+- Mantidos os temas, filtros, links antigos e comportamento de movimento reduzido.
+- Adicionados build estático, testes de tema e CI no GitHub Actions.
+- Preservado o protótipo anterior em `preview/` e ocultadas as referências no README.
+- Vercel e domínio próprio continuam pendentes de configuração.
+
 ## 2026-11-12 — Código da prévia versionado
 
 - Incluídos HTML, CSS, JavaScript e imagem ilustrativa em `preview/`.

@@ -1,73 +1,91 @@
 # midelim.com — Portfólio de Michel Marques
 
-Portfólio pessoal para apresentar minha trajetória em Segurança da Informação, engenharia de software na 42 Rio e projetos autorais com IA.
+Portfólio pessoal para apresentar minha trajetória em Segurança da Informação, formação na 42 Rio e projetos autorais com IA.
 
-[Prévia navegável](https://midelim-portfolio-preview.creamgown2.chatgpt.site/) · [Histórico de desenvolvimento](CHANGELOG.md)
+[Site em desenvolvimento](https://midelim-portfolio-preview.creamgown2.chatgpt.site/) · [Histórico](CHANGELOG.md)
 
-## Estado atual
+## Aplicação atual
 
-A pasta `preview/` contém o protótipo publicado em HTML, CSS e JavaScript. As páginas internas usam navegação por hash. A versão em Next.js, a integração com a Vercel e o domínio midelim.com estão planejados.
+Next.js com App Router, TypeScript e Tailwind CSS. A aplicação fica em `src/`; cada seção tem sua própria URL. O build gera uma versão estática do mesmo código para a prévia hospedada.
 
-## Executar a prévia
+O visual aprovado foi preservado. O retrato usa uma imagem com transparência sobre fundo Sand nos dois temas. Em telas pequenas, aparece no cartão de identificação compacto.
 
-Com Python 3 instalado, execute a partir da raiz do repositório.
+## Desenvolvimento local
+
+Requisitos: Node.js 24 e pnpm 11.25.0.
 
 ```sh
-python -m http.server 8000 --directory preview
+corepack enable
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
-Abra http://localhost:8000 no navegador. No Windows, o comando equivalente pode ser `py -m http.server 8000 --directory preview`.
+Abra http://localhost:3000.
 
-## Arquivos
+```sh
+pnpm test
+pnpm build
+pnpm typecheck
+pnpm check:export
+pnpm start
+```
 
-| Arquivo | Responsabilidade |
+`pnpm start` serve o build estático localmente em http://127.0.0.1:3000. O servidor de desenvolvimento é iniciado com `pnpm dev`.
+
+## Organização
+
+| Caminho | Responsabilidade |
 | --- | --- |
-| `preview/index.html` | Estrutura das páginas e conteúdo da trajetória |
-| `preview/style.css` | Layout responsivo, capas ilustrativas e paletas |
-| `preview/app.js` | Catálogo de projetos, filtros, navegação e animações de entrada |
-| `preview/theme.js` | Tema do dispositivo, alternância manual e persistência |
-| `preview/hardware.jpg` | Imagem ilustrativa do cartão lateral |
+| `src/app/` | Layout compartilhado e rotas |
+| `src/components/` | Perfil, navegação, tema, cards, filtros e efeitos |
+| `src/content/site.ts` | Identidade e navegação |
+| `src/content/pages.ts` | Textos das cinco páginas, separados por seção |
+| `src/content/projects.ts` | Descrições, tecnologias e links dos projetos |
+| `src/app/globals.css` | Paletas, layout aprovado e integração do Tailwind |
+| `public/images/` | Retrato otimizado, com transparência |
+| `tests/` | Regressões de preferência e migração de temas |
+| `scripts/` | Servidor local e verificação do build exportado |
+| `.github/workflows/ci.yml` | Validação automática a cada push e pull request |
+| `preview/` | Registro do protótipo anterior em HTML/CSS/JS |
+
+O `index.html` na raiz é um arquivo legado de outra prévia; não é usado pelo Next.js nem pelo build publicado.
 
 ## Navegação
 
 Home → About → Portfolio → Blog → Services.
 
-A Home apresenta um resumo com rolagem contínua. As páginas internas aprofundam trajetória, projetos, publicações e áreas de colaboração.
+Rotas: `/`, `/about/`, `/portfolio/`, `/blog/`, `/services/` e `/portfolio/[slug]/`.
 
-O catálogo inicial inclui MEGA-BRAIN, Cub3D, Minishell, Webserv, Philosophers e Inception. As capas são ilustrações. As pautas do Blog estão identificadas como conteúdo em preparação.
+Os seis projetos iniciais são MEGA-BRAIN, Cub3D, Minishell, Webserv, Philosophers e Inception. Links antigos por hash continuam encaminhando para as páginas correspondentes. As capas dos projetos continuam ilustrativas e as pautas do Blog estão identificadas como conteúdo em preparação.
 
-## Identidade visual aprovada
+## Cores
 
 | Modo | Fundo | Texto | Botões principais |
 | --- | --- | --- | --- |
 | Escuro | Charcoal `#1E1E1C` | Sand `#D8CBB3` | Electric Blue `#2F6BFF` |
 | Claro | Cream `#F3EEE3` | Ink Black `#111111` | Burnt Orange `#D9541E` |
 
-Na primeira visita, o tema segue a preferência do dispositivo. A escolha manual é salva no navegador. Os links anteriores com `?palette=cream` e `?palette=charcoal` continuam aceitos.
+O retrato tem fundo Sand `#D8CBB3` em ambos os modos. Na primeira visita o tema segue o dispositivo; a escolha manual é lembrada. Links com `?palette=cream` e `?palette=charcoal` continuam aceitos.
 
-Fontes da prévia — DM Sans e Space Grotesk, carregadas pelo Google Fonts.
+DM Sans e Space Grotesk são carregadas pelo Google Fonts. Movimento reduzido respeita a preferência do dispositivo.
 
-## Stack definida para a implementação
+## Publicação
 
-- Next.js com App Router e TypeScript.
-- Tailwind CSS.
-- Markdown/MDX para projetos e artigos.
-- GitHub Actions para validação.
-- Vercel para prévias e publicação em midelim.com.
-- GSAP com ScrollTrigger e Lenis propostos para a camada de movimento.
+A prévia atual é publicada a partir de `out/`. O GitHub Actions valida testes, compilação, tipos e links internos e guarda o build como artefato.
 
-A prévia atual usa CSS, IntersectionObserver e rolagem suave nativa. A integração das bibliotecas de animação será avaliada na implementação.
+Para a Vercel: importar este repositório, selecionar Next.js, usar a raiz do projeto, `pnpm install --frozen-lockfile` e `pnpm build`. A conexão com a conta Vercel e o DNS de midelim.com ainda precisam ser configurados. Não há credenciais de deploy no repositório.
 
-## Próximas entregas
+## Próxima etapa: comunicação
 
-- Implementar o visual aprovado em Next.js e Tailwind, com rotas próprias.
-- Integrar foto pessoal, currículo, experiência profissional e links de contato.
-- Elaborar os estudos de caso e identificar a contribuição individual nos projetos em equipe.
-- Substituir capas ilustrativas por capturas ou demonstrações quando disponíveis.
-- Publicar artigos e definir o conteúdo final de Services.
-- Configurar CI, integração da Vercel e DNS do domínio.
-- Conferir visualmente desktop e mobile, acessibilidade e animações.
+Os textos foram preservados durante a migração para permitir uma revisão editorial dedicada. Editar `src/content/pages.ts`, `site.ts` e `projects.ts` para:
 
-## Verificação deste marco
+- Explicar experiências e decisões concretas em primeira pessoa.
+- Substituir frases genéricas por situações reais da trajetória.
+- Detalhar minha contribuição em projetos feitos em equipe.
+- Desenvolver estudos de caso, artigos e o conteúdo de Services.
 
-A sintaxe dos scripts foi verificada com Node.js. A lógica de temas foi testada para preferência do dispositivo, escolha manual, persistência, migração das paletas anteriores e preservação da rota. A publicação da prévia foi confirmada. A revisão visual automatizada no navegador ficou pendente por indisponibilidade do ambiente.
+Markdown/MDX pode ser acrescentado quando os artigos e estudos de caso longos forem preparados. Currículo, contatos e experiência profissional também serão incorporados nessa etapa.
+
+## Verificação
+
+Build de produção, TypeScript, testes de tema e verificação dos links e recursos locais do build. A revisão visual automatizada desktop/mobile permanece pendente por indisponibilidade do navegador neste ambiente.
