@@ -34,7 +34,7 @@ Fonte: [tokens.css](../../src/design/tokens.css).
 
 Os dois últimos caracteres de uma cor com oito dígitos representam opacidade. Superfícies e transparências são variações neutras já existentes; não constituem uma nova paleta de destaque.
 
-Azul e laranja identificam ações principais. Não espalhar essas cores em todos os títulos, ícones e cards. As capas ilustrativas usam os neutros do tema; a fotografia mantém suas próprias cores.
+Azul e laranja identificam ações principais e estados selecionados. Não espalhar essas cores em todos os títulos, ícones e cards. As capas ilustrativas usam os neutros do tema; a fotografia mantém suas próprias cores.
 
 ### Como usar
 
@@ -57,7 +57,7 @@ Aliases antigos preservados: `--bg → --background`, `--panel → --surface`, `
 
 O tema inicial respeita o dispositivo. A escolha manual é salva no navegador. A alteração do sistema é acompanhada enquanto não houver escolha manual. Os parâmetros antigos de paleta continuam aceitos.
 
-Os dois temas preservam a estrutura e o significado dos elementos. A demonstração local do guia usa `data-design-theme` para comparar amostras; ela não muda a preferência global.
+Os dois temas preservam a estrutura e o significado dos elementos. As amostras do catálogo acompanham o tema global. O controle da amostra e o controle do topo permanecem sincronizados.
 
 ## 4. Tipografia
 
@@ -131,3 +131,15 @@ As capas são ilustrações em CSS, não capturas dos projetos. Ao substituí-la
 Referência: [WCAG 2.2](https://www.w3.org/TR/WCAG22/). Para texto comum, revisar contraste mínimo de 4,5:1; para texto grande, 3:1 conforme a definição da norma. Esses limites não representam uma certificação do site.
 
 Validar também foco visível, navegação por teclado, zoom, leitura das imagens e movimento reduzido. Texto sobre fotografia exige verificação específica. Rótulos pequenos e alvos móveis seguem como itens de revisão manual.
+
+## Distribuição 60/30/10
+
+Direção aprovada em 13/11/2026. Base: Cream no claro, Charcoal no escuro. Secundária: Ink Black no claro, Sand no escuro. Destaque: Burnt Orange no claro, Electric Blue no escuro.
+
+- 60%: fundo, superfícies neutras e respiro.
+- 30%: tipografia, bordas e apoio visual; não implica preencher 30% de cada card com um retângulo contrastante.
+- 10%: ação prioritária, indicador de seleção e foco. Componentes sem ação podem usar menos destaque.
+- Botão: usa a cor de destaque inteira porque é uma pequena parte do conjunto.
+- Retrato: mantém Sand e cores naturais; não recolorir para alcançar uma porcentagem.
+- Contraste: texto branco sobre azul, Ink Black sobre laranja. Nunca reduzir legibilidade para cumprir a razão.
+- O catálogo explicita a aplicação em cada peça. Não há medição automática de área colorida.

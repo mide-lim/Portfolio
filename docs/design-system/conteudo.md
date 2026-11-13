@@ -73,7 +73,7 @@ Não preencher lacunas com resultados plausíveis. Percentuais, escalas e datas 
 - `src/content/site.ts`: identidade e navegação.
 - `src/content/pages.ts`: textos das páginas principais.
 - `src/content/projects.ts`: projetos.
-- `src/content/design-system.ts`: conteúdo do guia e estado das decisões.
+- `src/content/component-catalog.ts`: textos atuais e pauta de revisão por peça.
 
 ## Como vamos revisar juntos
 

@@ -43,11 +43,11 @@ export function ThemeToggle() {
       .querySelector('meta[name="theme-color"]')
       ?.setAttribute("content", value === "light" ? "#F3EEE3" : "#1E1E1C");
     setTheme(value);
+    window.dispatchEvent(new Event("midelim-theme-change"));
   }
   const label = theme === "light" ? "Ativar modo escuro" : "Ativar modo claro";
   return (
     <button
-      id="theme-toggle"
       type="button"
       className="theme-toggle"
       title={label}

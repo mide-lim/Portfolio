@@ -1,6 +1,6 @@
 # Design system · midelim.com
 
-Versão 0.1 · 12/11/2026 · documento de trabalho.
+Versão 0.2 · 13/11/2026 · documento de trabalho.
 
 [Guia visual navegável](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) · [Código do guia](src/app/design-system/page.tsx) · [Decisões](docs/design-system/decisoes.md)
 
@@ -14,18 +14,20 @@ O portfólio apresenta a trajetória completa de Michel Marques: graduação em 
 
 | Documento | Pergunta que responde |
 | --- | --- |
-| [Fundamentos](docs/design-system/fundamentos.md) | O que são tokens? Quais cores, fontes, espaços e movimentos usamos? |
+| [Fundamentos](docs/design-system/fundamentos.md) | Quais cores, proporções, fontes, espaços e movimentos usamos? |
 | [Componentes](docs/design-system/componentes.md) | Que peças já existem e como reutilizá-las? |
 | [Conteúdo](docs/design-system/conteudo.md) | Como escrever as páginas com fatos e voz própria? |
 | [Fluxo e qualidade](docs/design-system/fluxo-e-qualidade.md) | Como trabalhar com IA, testar e publicar alterações? |
 | [Decisões](docs/design-system/decisoes.md) | O que está aprovado, proposto ou pendente? |
 | [AGENTS.md](AGENTS.md) | Quais instruções os agentes devem seguir no repositório? |
 
-## Referência visual inicial
+## Oficina de componentes
 
-![A mesma função de cor em dois temas](public/design-system/tokens.svg)
+O [catálogo navegável](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) separa 14 peças. Cada uma reúne amostra, papel das cores, textos atuais, pauta de revisão e arquivos de origem. Os endereços por hash permitem voltar à mesma peça, por exemplo `#abertura`.
 
-O nome `primary` representa a cor da ação principal. No modo claro aponta para Burnt Orange; no escuro, Electric Blue. O [guia interativo](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/#tokens) mostra essa relação usando um componente real.
+A composição segue a referência **60% base, 30% secundária, 10% destaque**. A proporção orienta a hierarquia visual; não é uma medição de pixels. O destaque fica concentrado em ações e estados, sem comprometer contraste ou alterar as cores da fotografia. Botões representam o destaque dentro do conjunto; não devem ser repartidos em três cores.
+
+As amostras de Sidebar, ThemeToggle, ActionLink, ProjectCard, ProjectCover, ProjectFilter e Footer usam componentes reais. Os demais blocos reproduzem trechos do layout em escala de catálogo e consultam os mesmos textos. A revisão editorial das páginas continua pendente.
 
 ## O que já está estabelecido
 
@@ -43,7 +45,7 @@ O nome `primary` representa a cor da ação principal. No modo claro aponta para
 | --- | --- |
 | Tokens de cor, fontes e aliases | Centralizados em `src/design/tokens.css` |
 | Integração Tailwind | Cores semânticas disponíveis por `@theme inline` |
-| Catálogo visual | Rota `/design-system/`; exemplos reais e esquemas identificados |
+| Catálogo visual | Rota `/design-system/`; seleção de peças, amostras e pauta editorial |
 | ActionLink | Navegação principal/discreta compartilhada com a Home e o perfil |
 | Componentes existentes | Perfil, menu, tema, projetos, filtros e efeitos |
 | Escala de espaço | Proposta para novas peças; valores antigos preservados |

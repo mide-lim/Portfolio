@@ -1,5 +1,14 @@
 # Histórico de desenvolvimento
 
+## 2026-11-13 · DS por componente e cores 60/30/10
+
+- Substituído o guia didático por uma oficina com 14 peças selecionáveis e links por hash.
+- Cada peça reúne amostra, cores, comunicação atual, pauta de revisão e origem no código.
+- Destaque concentrado nas ações, seleção e foco; preservados os dois temas, retrato e textos públicos.
+- Controles de tema sincronizados entre o topo e a amostra.
+- Documentação e instruções para agentes atualizadas; removidos demonstradores didáticos sem uso.
+
+
 Este arquivo registra os marcos e decisões do portfólio. Os commits do GitHub permitem acompanhar as alterações a partir da importação da prévia.
 
 ## 2026-11-12 — Design system documentado

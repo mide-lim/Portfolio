@@ -1,8 +1,8 @@
 # Catálogo de componentes
 
-[Guia com amostras reais](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/#componentes)
+[Guia com amostras reais](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/#perfil)
 
-**Componente:** peça reutilizável. **Variante:** versão prevista da peça. **Estado:** resposta à interação. **Seção:** conjunto de peças com uma função na página.
+A oficina separa perfil, navegação, tema, abertura, título de seção, ações, card, capa, filtros, trajetória, artigo, serviço, chamada final e rodapé. Cada peça tem amostra, funções 60/30/10, textos atuais, pauta de revisão e arquivos de origem.
 
 ## Catálogo atual
 
@@ -65,9 +65,9 @@ Alguns padrões ainda são markup compartilhado por convenção, não componente
 ## Imagens e estados visuais no guia
 
 - As amostras de ações e cards reutilizam o código de produção.
-- A comparação claro/escuro mostra a foto real com os tokens do tema.
-- A demonstração de filtro mostra seleção; o filtro funcional está no Portfolio.
-- Os desenhos de layout são esquemas explicativos, identificados como tal.
+- As amostras acompanham o tema global; o retrato mantém suas cores naturais.
+- O filtro do catálogo é o componente funcional real e altera os projetos visíveis.
+- Os padrões de seção são trechos de markup em escala reduzida, identificados como amostras.
 - Não declarar que uma amostra é uma captura de tela.
 
 ## Introdução de uma nova peça
@@ -75,3 +75,11 @@ Alguns padrões ainda são markup compartilhado por convenção, não componente
 Identifique finalidade, componente existente mais próximo, tokens usados, propriedades, comportamento no celular, semântica e estados. Acrescente uma amostra no guia e atualize este catálogo.
 
 shadcn/ui pode fornecer uma base para componentes complexos. Essa opção não exige substituir os componentes atuais nem mudar o visual aprovado. CLI, registry e MCP não estão configurados neste marco.
+
+## Comunicação por peça
+
+Fonte do catálogo: `src/content/component-catalog.ts`. Campos consultam `pages.ts`, `site.ts` e `projects.ts` quando disponíveis. Rótulos ainda locais, como filtros, tema e rodapé, indicam o arquivo do componente. Se esses rótulos mudarem, atualizar a ficha no mesmo commit.
+
+A pauta lista decisões a trabalhar, não afirma que os textos atuais estão aprovados. Não há formulário de edição ou salvamento de rascunhos nesta versão. Selecionar uma peça apenas muda a amostra e o hash da URL. Links dentro das amostras navegam para os destinos reais.
+
+60/30/10: superfícies neutras dominantes, conteúdo contrastante secundário e destaque concentrado. Estados e foco usam a mesma cor semântica das ações. Ver `fundamentos.md` para exceções e contraste.

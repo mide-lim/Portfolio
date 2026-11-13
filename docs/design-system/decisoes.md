@@ -1,6 +1,6 @@
 # Registro de decisões
 
-Atualizado em 12/11/2026. Esta é a pauta para organizar o sistema em conjunto.
+Atualizado em 13/11/2026. Esta é a pauta para organizar o sistema em conjunto.
 
 **Aprovado:** escolha explícita de Michel. **Implementado:** código existente, sem implicar aprovação de toda a redação. **Proposta:** direção para discutir. **Pendente:** informação ou validação ainda necessária.
 
@@ -12,6 +12,7 @@ Atualizado em 12/11/2026. Esta é a pauta para organizar o sistema em conjunto.
 | DS-04 | Proposta | Escala de espaço de 4 a 64 px | Facilitar coerência em novas peças |
 | DS-05 | Pendente | Evidências e contribuição individual em projetos | Reunir capturas, resultados e responsabilidades |
 | DS-06 | Pendente | Revisão visual e acessibilidade manual | Navegador de revisão indisponível no ambiente |
+| DS-07 | Aprovado / implementado | Composição 60/30/10 e DS por componente | Pedido explícito de 13/11/2026 |
 
 ## DS-01 · Identidade
 
@@ -27,7 +28,7 @@ O guia não muda a navegação principal. Não foi instalado shadcn/ui, Storyboo
 
 ## DS-03 · Conteúdo
 
-Próxima decisão: frase de abertura e tom da Home. O exemplo no guia é um rascunho. Em seguida, trabalhar About e os estudos de caso. Aprovar texto não equivale a aprovar alteração de layout.
+Próxima decisão: frase de abertura e tom da Home. O catálogo mostra os textos atuais e uma pauta específica por peça. Em seguida, trabalhar About e os estudos de caso. Aprovar texto não equivale a aprovar alteração de layout.
 
 ## DS-04 · Espaçamento
 
@@ -51,4 +52,14 @@ Build, tipos e testes automáticos não garantem aparência ou experiência de u
 - Verificação realizada.
 - Pendências reais.
 
-Alterar o registro e a fonte correspondente no mesmo marco. O guia mantém um resumo em `src/content/design-system.ts`; atualizá-lo junto deste arquivo.
+Alterar o registro e a fonte correspondente no mesmo marco. O catálogo mantém a pauta por peça em `src/content/component-catalog.ts`; atualizá-lo quando a decisão afetar uma peça.
+
+## DS-07 · Oficina de componentes · 13/11/2026
+
+Pedido: retirar as explicações sobre tokens da página do DS, trabalhar 60/30/10 e separar cada componente para revisar a comunicação.
+
+Implementação: catálogo com 14 peças selecionáveis, amostras do projeto, distribuição de cores por função, textos atuais e pauta editorial. O hash preserva a peça selecionada em links e histórico do navegador. A alternância de tema é global e sincronizada entre os controles visíveis.
+
+Acentos aplicados às setas de projeto e artigo, filtro selecionado, indicador da página atual e foco. Botões principais mantêm o destaque já existente. Nenhuma redação de página pública foi substituída. A proporção é uma referência visual; componentes simples não recebem três fundos artificiais. Fotografias, capas ilustrativas e legibilidade exigem adaptação.
+
+Revisão em navegador segue pendente após timeout do serviço de inspeção. Verificar build, tipos, testes de tema e links do export antes da entrega.

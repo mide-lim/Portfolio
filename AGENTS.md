@@ -12,6 +12,7 @@ Este repositório integra o projeto Curriculo + Processo Seletivo. O portfólio 
 ## Interface
 
 - Preserve as duas paletas e a ordem Home, About, Portfolio, Blog, Services, salvo pedido de mudança.
+- Siga 60/30/10 como referência de composição: base, secundária e destaque. Concentre o destaque em ações/estados; preserve contraste e a fotografia, sem alegar proporções de pixels medidas.
 - Use tokens semânticos: `background`, `surface`, `foreground`, `primary`, `primary-foreground`. Use os aliases existentes apenas ao manter CSS legado.
 - Reutilize `ActionLink`, `ProjectCard`, `ProjectCover`, `ProjectFilter`, `Header`, `Sidebar` e `ThemeToggle` quando aplicáveis.
 - Navegação usa link; ações locais usam button. Mantenha HTML semântico, nomes acessíveis e foco visível.
@@ -28,7 +29,7 @@ Este repositório integra o projeto Curriculo + Processo Seletivo. O portfólio 
 - Use primeira pessoa nas propostas editoriais. Mostre fatos e experiências concretas.
 - Mantenha pautas do Blog identificadas como propostas até haver artigos reais.
 - Não restaure a seção de referências visuais no README.
-- Exemplos editoriais do guia são rascunhos, não substituições automaticamente aprovadas para a Home.
+- O catálogo deve consultar os textos atuais e separar a pauta de revisão. Não publique uma nova redação como efeito colateral de reorganizar o DS.
 
 ## Validação e entrega
 

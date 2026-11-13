@@ -8,7 +8,7 @@ Portfólio pessoal para apresentar minha trajetória em Segurança da Informaç�
 
 [Guia visual com exemplos](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) · [Documentação do sistema](DESIGN.md)
 
-O guia explica tokens, temas, tipografia, componentes e decisões usando elementos do próprio site. A documentação distingue o aprovado, o implementado e as propostas para revisão conjunta.
+O catálogo separa 14 peças do site, com amostras, distribuição 60/30/10 de cores, textos atuais e pontos de revisão. A documentação distingue o aprovado, o implementado e as propostas para revisão conjunta.
 
 ## Aplicação atual
 
