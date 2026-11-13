@@ -1,5 +1,14 @@
 # Histórico de desenvolvimento
 
+## 2026-11-13 · Fundamentos, anatomia e navegação do DS
+
+- Home corrigida para Abertura, About, Portfolio, Blog e Services (CTA).
+- Fundamentos antes do catálogo: fontes, typography tokens, spacing, grid, stickers, cores, motion e comunicação.
+- 21 peças por navegação, com átomos/composição, regras de pixels, fontes e movimento.
+- Valores compartilhados centralizados em CSS; exceções atuais documentadas.
+- Verificação da ordem exportada da Home e regressões de links/contexto do DS.
+
+
 ## 2026-11-13 · DS por componente e cores 60/30/10
 
 - Substituído o guia didático por uma oficina com 14 peças selecionáveis e links por hash.

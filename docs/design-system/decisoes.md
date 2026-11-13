@@ -9,7 +9,7 @@ Atualizado em 13/11/2026. Esta é a pauta para organizar o sistema em conjunto.
 | DS-01 | Aprovado | Duas paletas, retrato sobre Sand, menu na ordem definida | Conversa de definição do portfólio |
 | DS-02 | Implementado | Tokens, catálogo visual e instruções no repositório | Pedido de organizar e documentar o sistema |
 | DS-03 | Em revisão | Primeira pessoa e relatos concretos | Michel considera os textos atuais genéricos |
-| DS-04 | Proposta | Escala de espaço de 4 a 64 px | Facilitar coerência em novas peças |
+| DS-04 | Implementado / exceções registradas | Escala de 4 a 64 px, medidas e tipografia compartilhadas | Pedido de regras uniformes; ver DS-08 |
 | DS-05 | Pendente | Evidências e contribuição individual em projetos | Reunir capturas, resultados e responsabilidades |
 | DS-06 | Pendente | Revisão visual e acessibilidade manual | Navegador de revisão indisponível no ambiente |
 | DS-07 | Aprovado / implementado | Composição 60/30/10 e DS por componente | Pedido explícito de 13/11/2026 |
@@ -63,3 +63,11 @@ Implementação: catálogo com 14 peças selecionáveis, amostras do projeto, di
 Acentos aplicados às setas de projeto e artigo, filtro selecionado, indicador da página atual e foco. Botões principais mantêm o destaque já existente. Nenhuma redação de página pública foi substituída. A proporção é uma referência visual; componentes simples não recebem três fundos artificiais. Fotografias, capas ilustrativas e legibilidade exigem adaptação.
 
 Revisão em navegador segue pendente após timeout do serviço de inspeção. Verificar build, tipos, testes de tema e links do export antes da entrega.
+
+## DS-08 · Fundamentos e ordem da Home · 13/11/2026
+
+Pedido explícito: Home em Abertura, About, Portfolio, Blog e Services como CTA; DS com fontes, typography tokens, texto, headings, cores, spacing, grid guidance, stickers, movimento e componentes com átomos, também agrupados por navegação.
+
+Implementado: ordem da Home corrigida, rolagem inicial para About, fundamentos antes do catálogo, 21 peças por página, fichas com medidas e composição, padrões de comunicação. Valores tipográficos/layout/motion existentes centralizados em CSS. Documentação de animação separada. Sem inclusão de biblioteca externa ou nova redação pública. Stickers tratados como etiquetas e marcadores visuais.
+
+O catálogo mostra os padrões compartilhados e as exceções existentes, sem alegar uma normalização completa de todos os pixels. Valores reduzidos das amostras são identificados. Revisão visual manual segue pendente por indisponibilidade do navegador.

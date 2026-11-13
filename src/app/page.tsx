@@ -6,7 +6,7 @@ import { ProjectGrid } from "@/components/project-grid";
 export default function Page() {
   return (
     <section>
-      <div className="hero">
+      <div className="hero" id="abertura">
         <span className="eyebrow">
           <i></i>
           {copy.prazer_michel_marques}
@@ -35,29 +35,13 @@ export default function Page() {
         </div>
         <div className="hero-bottom">
           <span>{copy.c_c_software_ia}</span>
-          <Link href="/#destaques" aria-label="Rolar para os projetos">
+          <Link href="/#trajetoria" aria-label="Rolar para a trajetória">
             {copy.role_para_explorar}
             <b>{copy.symbol_3}</b>
           </Link>
         </div>
       </div>
-      <section className="section" id="destaques">
-        <div className="section-heading">
-          <div>
-            <span className="eyebrow">{copy.portfolio}</span>
-            <h2>
-              {copy.ideias_em}
-              <br />
-              <em>{copy.funcionamento}</em>
-            </h2>
-          </div>
-          <ActionLink variant="text" href="/portfolio/">
-            {copy.todos_os_projetos}
-          </ActionLink>
-        </div>
-        <ProjectGrid featured />
-      </section>
-      <section className="section">
+      <section className="section" id="trajetoria">
         <div className="section-heading">
           <div>
             <span className="eyebrow">{copy.about}</span>
@@ -93,7 +77,23 @@ export default function Page() {
           {copy.explore_minha_trajetoria}
         </ActionLink>
       </section>
-      <section className="section">
+      <section className="section" id="destaques">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">{copy.portfolio}</span>
+            <h2>
+              {copy.ideias_em}
+              <br />
+              <em>{copy.funcionamento}</em>
+            </h2>
+          </div>
+          <ActionLink variant="text" href="/portfolio/">
+            {copy.todos_os_projetos}
+          </ActionLink>
+        </div>
+        <ProjectGrid featured />
+      </section>
+      <section className="section" id="caderno">
         <div className="section-heading">
           <div>
             <span className="eyebrow">{copy.blog}</span>
@@ -117,7 +117,7 @@ export default function Page() {
           <span className="circle-arrow">{copy.symbol}</span>
         </Link>
       </section>
-      <div className="closing">
+      <div className="closing" id="colaboracao">
         <span className="eyebrow">{copy.vamos_construir}</span>
         <h2>
           {copy.uma_boa_ideia}

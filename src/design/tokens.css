@@ -16,7 +16,43 @@
   --radius-action: 30px;
   --duration-interaction: 250ms;
   --duration-reveal: 650ms;
-  /* Proposed spacing vocabulary for new work; legacy spacing is preserved. */
+
+  /* Shared typography, geometry and motion; responsive values below. */
+  --type-body: 16px;
+  --type-intro: 18px;
+  --type-label: 11px;
+  --type-meta: 10px;
+  --type-action: 14px;
+  --type-card: 27px;
+  --type-home: clamp(62px, 7.3vw, 112px);
+  --type-page: clamp(58px, 6.5vw, 94px);
+  --type-section: clamp(35px, 4.3vw, 64px);
+  --type-section-heading: var(--type-section);
+  --weight-heading: 500;
+  --weight-action: 600;
+  --leading-body: 1.65;
+  --leading-heading: 1.06;
+  --leading-intro: 1.7;
+  --tracking-heading: -0.055em;
+  --layout-max: 1660px;
+  --layout-sidebar: 285px;
+  --layout-gap: 5.5%;
+  --layout-padding: 34px 3.4%;
+  --section-padding: 88px;
+  --project-grid-gap: 38px 24px;
+  --profile-padding: 26px;
+  --action-padding: 15px 24px;
+  --border-width: 1px;
+  --focus-width: 2px;
+  --focus-offset: 5px;
+  --duration-state: 200ms;
+  --duration-cover: 400ms;
+  --ease-standard: ease;
+  --reveal-distance: 24px;
+  --action-lift: -3px;
+  --card-lift: -6px;
+
+  /* Shared spacing scale for new components; legacy exceptions are documented. */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -74,4 +110,35 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-border: var(--border);
   --color-portrait: var(--portrait-background);
+}
+
+/* Viewport breakpoints are literal CSS media queries; values are centralized. */
+@media (max-width: 1100px) {
+  :root,
+  [data-design-theme] {
+    --type-home: 76px;
+    --layout-sidebar: 240px;
+    --layout-gap: 4%;
+    --layout-padding: 24px;
+    --profile-padding: 20px;
+  }
+}
+@media (max-width: 800px) {
+  :root,
+  [data-design-theme] {
+    --type-home: clamp(60px, 12vw, 90px);
+    --type-page: 65px;
+    --type-section-heading: 44px;
+    --layout-padding: 18px;
+    --section-padding: 60px;
+    --profile-padding: 16px 20px;
+  }
+}
+@media (max-width: 520px) {
+  :root,
+  [data-design-theme] {
+    --type-page: 58px;
+    --type-intro: 16px;
+    --type-section-heading: 45px;
+  }
 }

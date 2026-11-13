@@ -2,7 +2,11 @@
 
 [Guia com amostras reais](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/#perfil)
 
-A oficina separa perfil, navegação, tema, abertura, título de seção, ações, card, capa, filtros, trajetória, artigo, serviço, chamada final e rodapé. Cada peça tem amostra, funções 60/30/10, textos atuais, pauta de revisão e arquivos de origem.
+Os fundamentos aparecem antes da oficina. O catálogo tem 21 peças, organizadas por Globais, Home, About, Portfolio, Blog e Services.
+
+A oficina separa perfil, navegação, tema, abertura, título de seção, ações, card, capa, filtros, trajetória, artigo, serviço, chamada final e rodapé. Cada peça tem amostra, átomos/composição, tipografia, medidas, movimento, funções 60/30/10, textos atuais, pauta de revisão e arquivos de origem.
+
+Home: Abertura → About → Portfolio → Blog → Services (CTA). About inclui biografia, formação e competências; Blog inclui pautas; Portfolio inclui estudo de caso.
 
 ## Catálogo atual
 
@@ -83,3 +87,9 @@ Fonte do catálogo: `src/content/component-catalog.ts`. Campos consultam `pages.
 A pauta lista decisões a trabalhar, não afirma que os textos atuais estão aprovados. Não há formulário de edição ou salvamento de rascunhos nesta versão. Selecionar uma peça apenas muda a amostra e o hash da URL. Links dentro das amostras navegam para os destinos reais.
 
 60/30/10: superfícies neutras dominantes, conteúdo contrastante secundário e destaque concentrado. Estados e foco usam a mesma cor semântica das ações. Ver `fundamentos.md` para exceções e contraste.
+
+## Regras compartilhadas e exceções
+
+`src/content/design-standards.ts` mantém as fichas de medida e composição. Valores executados vivem em `src/design/tokens.css` e `globals.css`. Não tratar capa, card, marco ou grade como átomo: são composições de partes menores. A ficha mostra ambas as camadas.
+
+O contexto da página é preservado em `?view=about#pagina-interna` (ou portfolio/blog/services); o mesmo padrão de abertura consulta o texto da página escolhida. Filtros inválidos não devem esconder a peça selecionada.

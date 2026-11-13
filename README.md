@@ -8,7 +8,7 @@ Portfólio pessoal para apresentar minha trajetória em Segurança da Informaç�
 
 [Guia visual com exemplos](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) · [Documentação do sistema](DESIGN.md)
 
-O catálogo separa 14 peças do site, com amostras, distribuição 60/30/10 de cores, textos atuais e pontos de revisão. A documentação distingue o aprovado, o implementado e as propostas para revisão conjunta.
+O DS começa pelos fundamentos: fontes, tipografia, espaçamento, grid, stickers, cores, animações e comunicação. Em seguida, reúne 21 peças por página, com átomos/composição, medidas, amostras, distribuição 60/30/10 e pontos de revisão. A documentação distingue o aprovado, o implementado e as propostas para revisão conjunta.
 
 ## Aplicação atual
 
@@ -58,7 +58,9 @@ O `index.html` na raiz é um arquivo legado de outra prévia; não é usado pelo
 
 ## Navegação
 
-Home → About → Portfolio → Blog → Services.
+Menu: Home → About → Portfolio → Blog → Services.
+
+Seções da Home: Abertura → About → Portfolio → Blog → Services (CTA).
 
 Rotas: `/`, `/about/`, `/portfolio/`, `/blog/`, `/services/` e `/portfolio/[slug]/`.
 

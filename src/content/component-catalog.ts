@@ -1,4 +1,4 @@
-import { home, services } from "./pages";
+import { home, services, about, blog, portfolio } from "./pages";
 import { site } from "./site";
 import { projects } from "./projects";
 
@@ -239,7 +239,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     id: "trajetoria",
-    name: "Resumo da trajetória",
+    name: "About · trajetória",
     kind: "About preview",
     location: "Home",
     purpose: "Conectar formação, experiência prática e estudos atuais.",
@@ -270,7 +270,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     id: "blog",
-    name: "Chamada de artigo",
+    name: "Blog · chamada",
     kind: "Article preview",
     location: "Home · Blog",
     purpose: "Apresentar um tema de estudo sem anunciar um artigo inexistente.",
@@ -319,7 +319,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     id: "fechamento",
-    name: "Chamada final",
+    name: "Services · CTA",
     kind: "Closing",
     location: "Fim da Home",
     purpose: "Oferecer continuidade depois de conhecer a trajetória.",
@@ -367,3 +367,180 @@ export const catalog: CatalogItem[] = [
     ],
   },
 ];
+
+export const pageIntros: Record<
+  string,
+  { label: string; title: string; intro: string }
+> = {
+  about: {
+    label: about.about,
+    title: [about.o_percurso, about.por_tras, about.do_codigo].join(" "),
+    intro: about.seguranca_da_informacao_formacao_pratica_na,
+  },
+  portfolio: {
+    label: portfolio.portfolio,
+    title: portfolio.construir_e + " " + portfolio.aprender,
+    intro: portfolio.projetos_autorais_e_trabalhos_da_42,
+  },
+  blog: {
+    label: blog.blog,
+    title: blog.um_caderno + " " + blog.em_construcao,
+    intro: blog.espaco_para_compartilhar_decisoes_descobertas_e,
+  },
+  services: {
+    label: services.services,
+    title: services.da_ideia + " " + services.a_implementacao,
+    intro: services.areas_em_que_meus_estudos_e,
+  },
+};
+const neutralColors: [string, string, string] = [
+  "Fundo e espaço de leitura.",
+  "Título, conteúdo e divisórias.",
+  "Ação ou foco, quando houver.",
+];
+catalog.push(
+  {
+    id: "destaques",
+    name: "Portfolio · destaques",
+    kind: "ProjectGrid",
+    location: "Home · depois de About",
+    purpose: "Apresentar os projetos em destaque e abrir o catálogo.",
+    source: "src/components/project-grid.tsx",
+    contentSource: "src/content/projects.ts",
+    fields: [
+      field("Título", home.ideias_em + " " + home.funcionamento),
+      field(
+        "Projetos",
+        projects
+          .slice(0, 4)
+          .map((p) => p.name)
+          .join(" · "),
+      ),
+      field("Link", home.todos_os_projetos),
+    ],
+    review: [
+      "Equilibrar projetos autorais e da 42.",
+      "Rever título e resumo junto das capas.",
+    ],
+    colors: neutralColors,
+  },
+  {
+    id: "pagina-interna",
+    name: "Abertura de página",
+    kind: "Page hero",
+    location: "About · Portfolio · Blog · Services",
+    purpose: "Introduzir a página com o mesmo padrão de título e texto.",
+    source: "src/app/about/page.tsx",
+    contentSource: "src/content/pages.ts",
+    fields: [
+      field("Título", pageIntros.about.title),
+      field("Introdução", pageIntros.about.intro),
+    ],
+    review: [
+      "O tema da página precisa ficar claro no título.",
+      "Selecionar a página acima para comparar os textos.",
+    ],
+    colors: neutralColors,
+  },
+  {
+    id: "biografia",
+    name: "Biografia",
+    kind: "About split",
+    location: "About",
+    purpose: "Apresentar a trajetória em primeira pessoa.",
+    source: "src/app/about/page.tsx",
+    contentSource: "src/content/pages.ts",
+    fields: [
+      field("Abertura", about.minha_trajetoria_passa_por_compreender_sistemas),
+      field("Formação", about.sou_graduado_em_seguranca_da_informacao),
+      field(
+        "Pesquisa e projetos",
+        about.nos_projetos_autorais_investigo_como_a,
+      ),
+    ],
+    review: [
+      "Inserir experiências específicas que representem sua trajetória.",
+      "Rever ritmo e extensão dos parágrafos.",
+    ],
+    colors: neutralColors,
+  },
+  {
+    id: "formacao",
+    name: "Formação e prática",
+    kind: "Timeline",
+    location: "About",
+    purpose: "Organizar marcos de formação com contexto.",
+    source: "src/app/about/page.tsx",
+    contentSource: "src/content/pages.ts",
+    fields: [
+      field("Graduação", about.seguranca_da_informacao),
+      field("42 Rio", about.common_core_em_andamento_com_87),
+      field(
+        "Projetos autorais",
+        about.estudos_e_experimentos_com_analise_multimodal,
+      ),
+    ],
+    review: [
+      "Manter a data de referência das informações de formação.",
+      "Separar conclusão, curso em andamento e estudos independentes.",
+    ],
+    colors: neutralColors,
+  },
+  {
+    id: "competencias",
+    name: "Competências em contexto",
+    kind: "Skill grid",
+    location: "About",
+    purpose: "Relacionar cada competência com um projeto concreto.",
+    source: "src/app/about/page.tsx",
+    contentSource: "src/content/pages.ts",
+    fields: [
+      field("Sistemas", about.minishell_processos_pipes_e_sinais),
+      field("Gráficos", about.cub3d_raycasting_e_interacao),
+      field("Concorrência", about.philosophers_threads_e_mutexes),
+      field("Infraestrutura", about.inception_containers_e_servicos),
+    ],
+    review: [
+      "Usar os projetos como evidência de prática.",
+      "Confirmar contribuições pessoais em trabalhos coletivos.",
+    ],
+    colors: neutralColors,
+  },
+  {
+    id: "pautas",
+    name: "Pauta do Blog",
+    kind: "Editorial item",
+    location: "Blog",
+    purpose: "Mostrar um assunto em preparação e sua relação com um projeto.",
+    source: "src/app/blog/page.tsx",
+    contentSource: "src/content/pages.ts",
+    fields: [
+      field("Estado", blog.sistemas_pauta_proposta),
+      field("Título", blog.do_comando + " " + blog.ao_processo),
+      field("Descrição", blog.parsing_redirecionamentos_e_execucao_a_partir),
+    ],
+    review: [
+      "Publicar como artigo somente quando o texto existir.",
+      "Definir a experiência ou decisão que será explicada.",
+    ],
+    colors: neutralColors,
+  },
+  {
+    id: "estudo",
+    name: "Estudo de caso",
+    kind: "Project detail",
+    location: "Portfolio · página do projeto",
+    purpose: "Aprofundar o contexto e as decisões do projeto.",
+    source: "src/app/portfolio/[slug]/page.tsx",
+    contentSource: "src/content/projects.ts",
+    fields: [
+      field("Descrição", projects[0].description),
+      field("Foco", projects[0].focus),
+    ],
+    review: [
+      "Acrescentar minha participação e decisões técnicas.",
+      "Documentar resultados com evidências verificáveis.",
+    ],
+    colors: neutralColors,
+  },
+);

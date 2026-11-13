@@ -1,145 +1,92 @@
 # Fundamentos visuais
 
-[Mapa geral](../../DESIGN.md) · [Guia visual](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/)
+[DS navegável](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) · [Mapa do sistema](../../DESIGN.md)
 
-## 1. Token: uma decisão com nome
+## Organização
 
-Um token associa um nome a um valor de design. Exemplo: `primary` significa a cor da ação principal. O componente pergunta ao sistema qual valor usar.
+Fundamentos primeiro: Fonts & typography, Spacing & pixels, Grid guidance, Stickers, Colors, Motion e Comunicação. Depois: componentes por navegação, com átomos, medidas, movimento, textos e pauta.
 
-![Diagrama de tokens nos dois temas](../../public/design-system/tokens.svg)
+Home: **Abertura → About → Portfolio → Blog → Services (CTA)**. Perfil, menu e rodapé são globais. O indicador de rolagem da abertura leva a About; o CTA “Explorar projetos” continua levando ao Portfolio.
 
-| Camada | Exemplo | Significado |
+## Fonts, typography tokens, text e headings
+
+Famílias em `src/design/tokens.css`; carregamento em `src/app/layout.tsx`. Google Fonts com `display=swap`, pesos 400/500/600/700 e fallback sans-serif.
+
+| Papel | Fonte | Token | Tamanho | Peso / entrelinha |
+| --- | --- | --- | --- | --- |
+| H1 Home | Space Grotesk | --type-home | clamp(62px, 7.3vw, 112px); ≤1100: 76; ≤800: clamp(60px, 12vw, 90px) | 500 / 1,06 |
+| H1 internas | Space Grotesk | --type-page | clamp(58px, 6.5vw, 94px); ≤800: 65; ≤520: 58 | 500 / 1,06 |
+| H2 | Space Grotesk | --type-section | clamp(35px, 4.3vw, 64px) | 500 / 1,06 |
+| Título de seção Home | Space Grotesk | --type-section-heading | H2; ≤800: 44; ≤520: 45 | 500 / 1,06 |
+| Card H3 | Space Grotesk | --type-card | 27 px | 500 / 1,06 |
+| Introdução | DM Sans | --type-intro | 18 px; ≤520: 16 | 400 / 1,7 |
+| Corpo | DM Sans | --type-body | 16 px | 400 / 1,65 |
+| CTA | DM Sans | --type-action | 14 px; perfil: 13 | 600 / 1,65 |
+| Identificador | DM Sans | --type-label | 11 px; tracking 2 px | 600 / 1,65 |
+| Categoria do card | DM Sans | --type-meta | 10 px; tracking 1 px | 400 / 1,65 |
+
+Títulos usam `--tracking-heading: -0.055em`. Um H1 por página, H2 para seções e H3 para itens. Exceções de editorial, serviços, timeline e rodapé constam nas fichas. As amostras do DS têm escala própria, explicitamente identificada; não representam medição do elemento em produção.
+
+## Spacing e medidas
+
+Escala disponível: `--space-1/2/3/4/6/8/12/16` = 4/8/12/16/24/32/48/64 px. Usar nos componentes novos; manter as exceções existentes documentadas.
+
+| Regra | Token | Valor |
 | --- | --- | --- |
-| Valor | `#2F6BFF` | Uma cor específica |
-| Paleta | `--palette-electric-blue` | Nome da cor |
-| Função semântica | `--primary` | Papel daquela cor na interface |
-| Componente | `ActionLink` | Peça que usa a função |
+| Seção | --section-padding | 88 px vertical; ≤800: 60 |
+| Grade de projetos | --project-grid-gap | 38 px vertical / 24 horizontal |
+| Perfil | --profile-padding | 26 px; ≤1100: 20; ≤800: 16 × 20 |
+| Ação | --action-padding | 15 × 24 px |
+| Raios | --radius-profile/image/project/action | 30 / 18 / 23 / 30 px |
+| Bordas | --border-width | 1 px |
+| Foco | --focus-width / --focus-offset | 2 px / 5 px; tema afasta 4 px |
 
-Uma mudança na função afeta os componentes que a consultam. Não é necessário procurar cores repetidas em cada página.
+Medidas de 25, 26, 30, 35 e 38 px continuam intencionais em peças já existentes. O pedido atual centraliza regras e documenta exceções; não altera silenciosamente todos os espaços para múltiplos de quatro.
 
-## 2. Cores em execução
+## Grid guidance
 
-Fonte: [tokens.css](../../src/design/tokens.css).
-
-| Token | Claro | Escuro | Uso |
+| Viewport | Estrutura | Padding externo | Gap |
 | --- | --- | --- | --- |
-| `--background` | Cream #F3EEE3 | Charcoal #1E1E1C | Fundo da página |
-| `--surface` | #EBE5D8 | #242420 | Cartão lateral e superfícies |
-| `--foreground` | Ink Black #111111 | Sand #D8CBB3 | Texto principal |
-| `--muted-foreground` | #111111B3 | #D8CBB3B8 | Texto secundário |
-| `--border` | #1111112B | #D8CBB333 | Divisórias e contornos |
-| `--primary` | Burnt Orange #D9541E | Electric Blue #2F6BFF | Ação principal |
-| `--primary-foreground` | Ink Black #111111 | Branco #FFFFFF | Texto da ação |
-| `--portrait-background` | Sand #D8CBB3 | Sand #D8CBB3 | Fundo da foto |
+| >1100 px | Perfil 285 px + conteúdo flexível | 34 px / 3,4% | 5,5% |
+| 801–1100 px | Perfil 240 px + conteúdo flexível | 24 px | 4% |
+| 521–800 px | Perfil compacto acima do conteúdo | 18 px | Fluxo vertical |
+| ≤520 px | Conteúdo e cards em coluna única | 18 px | Cards: 38 px vertical |
 
-Os dois últimos caracteres de uma cor com oito dígitos representam opacidade. Superfícies e transparências são variações neutras já existentes; não constituem uma nova paleta de destaque.
+Máximo: `--layout-max: 1660px`. Tokens de layout: `--layout-sidebar`, `--layout-padding`, `--layout-gap`. Media queries usam 1100/800/520 px literais; CSS custom properties não são usadas nas condições das media queries.
 
-Azul e laranja identificam ações principais e estados selecionados. Não espalhar essas cores em todos os títulos, ícones e cards. As capas ilustrativas usam os neutros do tema; a fotografia mantém suas próprias cores.
+O DS reorganiza seu menu de componentes até 1100 px e seus pares de amostras até 700 px. Isso não modifica os breakpoints das páginas.
 
-### Como usar
+## Stickers
 
-```tsx
-<div className="bg-surface text-foreground border border-border">
-  Conteúdo do cartão
-</div>
-```
+“Stickers” neste projeto significa etiquetas e marcadores visuais, sem biblioteca instalada.
 
-```css
-.exemplo {
-  background: var(--surface);
-  color: var(--foreground);
-}
-```
+- Identificador/eyebrow: 11 px, peso 600, tracking 2 px.
+- Tag de tecnologia: 11 px, padding 5 × 12, raio 25 e borda 1.
+- Status do DS: 10 px, padding 5 × 10, raio 30.
+- Seta: 42 × 42 px, dentro do link completo, com destaque semântico.
+- Estado editorial sempre em texto: Pauta proposta, Em preparação, Em revisão.
 
-Aliases antigos preservados: `--bg → --background`, `--panel → --surface`, `--text → --foreground`, `--cta → --primary`. Evite introduzir novos aliases sem necessidade.
+## Colors e proporção
 
-## 3. Temas
+| Função | Claro | Escuro |
+| --- | --- | --- |
+| --background | Cream #F3EEE3 | Charcoal #1E1E1C |
+| --surface | #EBE5D8 | #242420 |
+| --foreground | Ink Black #111111 | Sand #D8CBB3 |
+| --muted-foreground | #111111B3 | #D8CBB3B8 |
+| --border | #1111112B | #D8CBB333 |
+| --primary | Burnt Orange #D9541E | Electric Blue #2F6BFF |
+| --primary-foreground | #111111 | #FFFFFF |
+| --portrait-background | #D8CBB3 | #D8CBB3 |
 
-O tema inicial respeita o dispositivo. A escolha manual é salva no navegador. A alteração do sistema é acompanhada enquanto não houver escolha manual. Os parâmetros antigos de paleta continuam aceitos.
+60% base, 30% secundária, 10% destaque: referência de hierarquia, não uma medição de área. Ação principal e estado selecionado concentram o destaque. Componentes sem ação podem usar menos destaque. Não dividir um botão em três fundos para atingir a razão.
 
-Os dois temas preservam a estrutura e o significado dos elementos. As amostras do catálogo acompanham o tema global. O controle da amostra e o controle do topo permanecem sincronizados.
+Fotografia preservada em cores naturais sobre Sand. Arquivo 640 × 801 px em `public/images/michel-marques.webp`. Capas continuam ilustrações CSS.
 
-## 4. Tipografia
+## Motion e comunicação
 
-| Nome | Fonte | Papel | Referência visual |
-| --- | --- | --- | --- |
-| `--font-heading` | Space Grotesk | Títulos e identidade | Frases grandes da Home |
-| `--font-body` | DM Sans | Leitura e navegação | Parágrafos e menu |
+- [Movimento](movimento.md): ferramentas reais, valores, aplicação e movimento reduzido.
+- [Conteúdo](conteudo.md): voz, fatos, autoria e revisão editorial.
+- [Componentes](componentes.md): anatomia, medidas específicas e navegação.
 
-Valores do site anterior preservados:
-
-- Corpo: 16 px, entrelinha 1,65.
-- Introdução: 18 px; 16 px no breakpoint de até 520 px.
-- H1 da Home: base fluida entre 62 e 112 px, com ajustes específicos por breakpoint.
-- H1 de páginas internas: base fluida entre 58 e 94 px, com ajustes em telas menores.
-- H2: base fluida entre 35 e 64 px.
-- H3 de card: 27 px.
-- Identificadores e informações auxiliares: aproximadamente 9–12 px; revisar legibilidade no celular.
-
-Esses valores descrevem a implementação atual, não uma escala final já normalizada. O guia reduz alguns espécimes para caber no catálogo. Use a hierarquia HTML conforme a estrutura do conteúdo, sem escolher H1/H2 apenas pelo tamanho visual.
-
-## 5. Espaço e bordas
-
-**Padding:** espaço interno. **Gap:** distância entre itens. **Margin:** espaço externo. **Radius:** arredondamento dos cantos.
-
-Proposta de vocabulário para novas peças:
-
-| Token | Valor |
-| --- | --- |
-| `--space-1` | 4 px |
-| `--space-2` | 8 px |
-| `--space-3` | 12 px |
-| `--space-4` | 16 px |
-| `--space-6` | 24 px |
-| `--space-8` | 32 px |
-| `--space-12` | 48 px |
-| `--space-16` | 64 px |
-
-A escala está disponível, mas sua adoção no layout completo está em revisão. Não arredondar automaticamente valores antigos de 25, 26, 34 ou 38 px.
-
-Raios registrados: perfil 30 px, imagem 18 px, capa de projeto 23 px, ação principal 30 px. São decisões distintas com nomes próprios.
-
-## 6. Layout responsivo
-
-| Faixa atual | Comportamento |
-| --- | --- |
-| Mais de 1100 px | Coluna de perfil de 285 px; conteúdo ao lado |
-| Até 1100 px, acima de 800 px | Perfil de 240 px e espaços reduzidos |
-| Até 800 px | Perfil compacto no topo, com retrato de 58 × 70 px |
-| Até 520 px | Cards e blocos principais em uma coluna |
-
-Largura máxima da composição: 1660 px. Home longa e rotas internas independentes. O menu mantém a ordem definida. O guia tem regras próprias de responsividade para suas amostras.
-
-## 7. Movimento
-
-- Ações: transição de aproximadamente 250 ms.
-- Cards: deslocamento discreto no hover, 400 ms.
-- Entrada de elementos: opacidade e deslocamento de 24 px em 650 ms.
-- Rolagem: suave nativa e barra de progresso.
-- Preferência `prefers-reduced-motion`: remove animações e transições.
-
-Não há GSAP, Lenis ou parallax implementados. Qualquer evolução deve conservar acesso ao conteúdo sem depender de animação.
-
-## 8. Imagens
-
-Retrato em `public/images/michel-marques.webp`: 640 × 801 px, com transparência. O fundo Sand é aplicado em CSS. Não alterar rosto, roupa ou cores em tarefas de layout.
-
-As capas são ilustrações em CSS, não capturas dos projetos. Ao substituí-las por capturas reais, definir enquadramento, legenda e texto alternativo. Não apresentar dados, telas ou resultados fictícios.
-
-## 9. Acessibilidade
-
-Referência: [WCAG 2.2](https://www.w3.org/TR/WCAG22/). Para texto comum, revisar contraste mínimo de 4,5:1; para texto grande, 3:1 conforme a definição da norma. Esses limites não representam uma certificação do site.
-
-Validar também foco visível, navegação por teclado, zoom, leitura das imagens e movimento reduzido. Texto sobre fotografia exige verificação específica. Rótulos pequenos e alvos móveis seguem como itens de revisão manual.
-
-## Distribuição 60/30/10
-
-Direção aprovada em 13/11/2026. Base: Cream no claro, Charcoal no escuro. Secundária: Ink Black no claro, Sand no escuro. Destaque: Burnt Orange no claro, Electric Blue no escuro.
-
-- 60%: fundo, superfícies neutras e respiro.
-- 30%: tipografia, bordas e apoio visual; não implica preencher 30% de cada card com um retângulo contrastante.
-- 10%: ação prioritária, indicador de seleção e foco. Componentes sem ação podem usar menos destaque.
-- Botão: usa a cor de destaque inteira porque é uma pequena parte do conjunto.
-- Retrato: mantém Sand e cores naturais; não recolorir para alcançar uma porcentagem.
-- Contraste: texto branco sobre azul, Ink Black sobre laranja. Nunca reduzir legibilidade para cumprir a razão.
-- O catálogo explicita a aplicação em cada peça. Não há medição automática de área colorida.
+As amostras acompanham o tema global, exceto os dois cartões comparativos de paleta, que usam seu próprio escopo. Foco, zoom, contraste e legibilidade ainda exigem revisão visual manual.

@@ -14,7 +14,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.65 var(--font-body);
+  font: var(--type-body)/var(--leading-body) var(--font-body);
 }
 
 a {
@@ -27,28 +27,28 @@ button {
 }
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 5px;
+  outline: var(--focus-width) solid var(--accent);
+  outline-offset: var(--focus-offset);
 }
 ::selection {
   background: var(--text);
   color: var(--bg);
 }
 .shell {
-  max-width: 1660px;
+  max-width: var(--layout-max);
   margin: auto;
-  padding: 34px 3.4%;
+  padding: var(--layout-padding);
   display: grid;
-  grid-template-columns: 285px minmax(0, 1fr);
-  gap: 5.5%;
+  grid-template-columns: var(--layout-sidebar) minmax(0, 1fr);
+  gap: var(--layout-gap);
 }
 .profile {
   position: sticky;
   top: 34px;
   align-self: start;
-  border: 1px solid var(--line);
+  border: var(--border-width) solid var(--line);
   border-radius: var(--radius-profile);
-  padding: 26px;
+  padding: var(--profile-padding);
   background: var(--panel);
 }
 .identity {
@@ -120,7 +120,7 @@ button:focus-visible {
   margin: 22px 0;
 }
 .social a {
-  border: 1px solid var(--line);
+  border: var(--border-width) solid var(--line);
   padding: 9px 15px;
   border-radius: 30px;
   font-size: 12px;
@@ -131,17 +131,17 @@ button:focus-visible {
   justify-content: center;
   gap: 26px;
   border-radius: var(--radius-action);
-  padding: 15px 24px;
+  padding: var(--action-padding);
   background: var(--accent);
   color: var(--bg);
   font-weight: 600;
   font-size: 14px;
   transition:
-    transform 0.25s,
-    background 0.25s;
+    transform var(--duration-interaction) var(--ease-standard),
+    background var(--duration-interaction) var(--ease-standard);
 }
 .button:hover {
-  transform: translateY(-3px);
+  transform: translateY(var(--action-lift));
   background: var(--cta);
 }
 .button span {
@@ -175,10 +175,12 @@ nav {
 nav a {
   font-size: 14px;
   padding: 10px 19px;
-  border: 1px solid transparent;
+  border: var(--border-width) solid transparent;
   border-radius: 30px;
   color: var(--muted);
-  transition: 0.2s;
+  transition:
+    color var(--duration-state) var(--ease-standard),
+    background var(--duration-state) var(--ease-standard);
 }
 nav a:hover {
   color: var(--text);
@@ -189,7 +191,7 @@ nav a[aria-current] {
   background: var(--panel);
 }
 .theme {
-  border: 1px solid var(--line);
+  border: var(--border-width) solid var(--line);
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -229,12 +231,12 @@ h1,
 h2,
 h3 {
   font-family: var(--font-heading);
-  font-weight: 500;
-  line-height: 1.06;
-  letter-spacing: -0.055em;
+  font-weight: var(--weight-heading);
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-heading);
 }
 h1 {
-  font-size: clamp(62px, 7.3vw, 112px);
+  font-size: var(--type-home);
   margin: 30px 0;
 }
 h1 em,
@@ -243,15 +245,15 @@ h2 em {
   color: var(--accent);
 }
 h2 {
-  font-size: clamp(35px, 4.3vw, 64px);
+  font-size: var(--type-section);
 }
 h3 {
-  font-size: 27px;
+  font-size: var(--type-card);
 }
 .intro {
   color: var(--muted);
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: var(--type-intro);
+  line-height: var(--leading-intro);
   max-width: 660px;
 }
 .hero-actions {
@@ -264,9 +266,9 @@ h3 {
   font-size: 13px;
   font-weight: 500;
   display: inline-block;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--border-width) solid var(--line);
   padding: 7px 0;
-  transition: color 0.2s;
+  transition: color var(--duration-state) var(--ease-standard);
 }
 .text-link:hover {
   color: var(--accent);
@@ -285,8 +287,8 @@ h3 {
   margin-left: 15px;
 }
 .section {
-  padding: 88px 0;
-  border-top: 1px solid var(--line);
+  padding: var(--section-padding) 0;
+  border-top: var(--border-width) solid var(--line);
 }
 .section-heading {
   display: flex;
@@ -302,7 +304,7 @@ h3 {
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 38px 24px;
+  gap: var(--project-grid-gap);
 }
 .project-card {
   min-width: 0;
@@ -314,10 +316,10 @@ h3 {
   overflow: hidden;
   border-radius: var(--radius-project);
   background: var(--panel);
-  transition: transform 0.4s;
+  transition: transform var(--duration-cover) var(--ease-standard);
 }
 .project-card:hover .cover {
-  transform: translateY(-6px);
+  transform: translateY(var(--card-lift));
 }
 .project-card .card-copy {
   padding: 18px 0;
@@ -330,7 +332,7 @@ h3 {
 }
 .card-copy h3 {
   margin: 8px 0;
-  font-size: 27px;
+  font-size: var(--type-card);
 }
 .card-copy p {
   font-size: 13px;
@@ -373,7 +375,8 @@ h3 {
   border-radius: 50%;
   right: -15px;
   bottom: -45px;
-  border: 1px solid color-mix(in srgb, var(--cover) 50%, transparent);
+  border: var(--border-width) solid
+    color-mix(in srgb, var(--cover) 50%, transparent);
   box-shadow:
     0 0 0 15px color-mix(in srgb, var(--cover) 10%, transparent),
     0 0 0 30px color-mix(in srgb, var(--cover) 10%, transparent),
@@ -391,7 +394,7 @@ h3 {
   left: -105px;
   top: 70px;
   transform: rotate(-8deg);
-  border: 1px solid var(--line);
+  border: var(--border-width) solid var(--line);
   background: var(--bg);
   border-radius: 10px;
   padding: 14px 17px;
@@ -516,7 +519,8 @@ h3 {
 }
 .blocks span {
   padding: 22px 14px;
-  border: 1px solid color-mix(in srgb, var(--cover-ink) 35%, transparent);
+  border: var(--border-width) solid
+    color-mix(in srgb, var(--cover-ink) 35%, transparent);
   border-radius: 12px;
   background: color-mix(in srgb, var(--cover-ink) 8%, transparent);
   font: 11px var(--font-heading);
@@ -533,7 +537,8 @@ h3 {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--cover) 30%, transparent);
+  border: var(--border-width) solid
+    color-mix(in srgb, var(--cover) 30%, transparent);
   box-shadow: 0 0 0 20px color-mix(in srgb, var(--cover) 10%, transparent);
 }
 .table span {
@@ -574,7 +579,7 @@ p {
 }
 .mini-timeline {
   padding-left: 25px;
-  border-left: 1px solid var(--line);
+  border-left: var(--border-width) solid var(--line);
 }
 .mini-timeline > div {
   margin-bottom: 30px;
@@ -595,7 +600,7 @@ small {
   display: flex;
   align-items: center;
   gap: 24px;
-  border: 1px solid var(--line);
+  border: var(--border-width) solid var(--line);
   border-radius: 23px;
   padding: 30px;
 }
@@ -624,7 +629,7 @@ small {
   padding: 75px 0 65px;
 }
 .page-hero h1 {
-  font-size: clamp(58px, 6.5vw, 94px);
+  font-size: var(--type-page);
 }
 .timeline {
   margin-top: 40px;
@@ -634,7 +639,7 @@ small {
   grid-template-columns: 150px 1fr;
   gap: 25px;
   padding: 30px 0;
-  border-top: 1px solid var(--line);
+  border-top: var(--border-width) solid var(--line);
 }
 .timeline article > span {
   font-size: 11px;
@@ -651,7 +656,7 @@ small {
   margin-top: 18px;
 }
 .tags span {
-  border: 1px solid var(--line);
+  border: var(--border-width) solid var(--line);
   padding: 5px 12px;
   border-radius: 25px;
   font-size: 11px;
@@ -664,7 +669,7 @@ small {
   margin-top: 35px;
 }
 .skill-grid a {
-  border: 1px solid var(--line);
+  border: var(--border-width) solid var(--line);
   border-radius: 18px;
   padding: 24px;
 }
@@ -685,7 +690,7 @@ small {
 }
 .filters button {
   background: transparent;
-  border: 1px solid var(--line);
+  border: var(--border-width) solid var(--line);
   color: var(--muted);
   padding: 10px 18px;
   border-radius: 25px;
@@ -704,7 +709,7 @@ small {
 }
 .editorial-list article {
   padding: 35px 0;
-  border-top: 1px solid var(--line);
+  border-top: var(--border-width) solid var(--line);
 }
 .editorial-list h2 {
   font-size: 42px;
@@ -717,7 +722,7 @@ small {
   display: flex;
   gap: 30px;
   padding: 40px 0;
-  border-top: 1px solid var(--line);
+  border-top: var(--border-width) solid var(--line);
 }
 .service-list article > span {
   font-size: 40px;
@@ -765,7 +770,7 @@ footer {
   align-items: center;
   gap: 18px;
   flex-wrap: wrap;
-  border-top: 1px solid var(--line);
+  border-top: var(--border-width) solid var(--line);
   padding: 27px 0;
   font-size: 11px;
   color: var(--muted);
@@ -791,10 +796,10 @@ footer a span {
 }
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(var(--reveal-distance));
   transition:
-    opacity 0.65s,
-    transform 0.65s;
+    opacity var(--duration-reveal) var(--ease-standard),
+    transform var(--duration-reveal) var(--ease-standard);
 }
 .reveal.visible {
   opacity: 1;
@@ -810,12 +815,12 @@ footer a span {
 }
 @media (max-width: 1100px) {
   .shell {
-    grid-template-columns: 240px minmax(0, 1fr);
-    gap: 4%;
-    padding: 24px;
+    grid-template-columns: var(--layout-sidebar) minmax(0, 1fr);
+    gap: var(--layout-gap);
+    padding: var(--layout-padding);
   }
   .profile {
-    padding: 20px;
+    padding: var(--profile-padding);
     top: 24px;
   }
   .portrait {
@@ -833,7 +838,7 @@ footer a span {
     padding-top: 80px;
   }
   h1 {
-    font-size: 76px;
+    font-size: var(--type-home);
   }
   .hero-actions {
     gap: 18px;
@@ -852,13 +857,13 @@ footer a span {
 @media (max-width: 800px) {
   .shell {
     display: block;
-    padding: 18px;
+    padding: var(--layout-padding);
   }
   .profile {
     position: static;
     display: grid;
     grid-template-columns: 1fr auto;
-    padding: 16px 20px;
+    padding: var(--profile-padding);
     margin-bottom: 15px;
     border-radius: 20px;
   }
@@ -891,19 +896,19 @@ footer a span {
     min-height: 660px;
   }
   h1 {
-    font-size: clamp(60px, 12vw, 90px);
+    font-size: var(--type-home);
   }
   .hero-bottom {
     margin-top: 65px;
   }
   .section {
-    padding: 60px 0;
+    padding: var(--section-padding) 0;
   }
   .page-hero {
     padding-top: 50px;
   }
   .page-hero h1 {
-    font-size: 65px;
+    font-size: var(--type-page);
   }
   .profile + .workspace {
     width: 100%;
@@ -912,7 +917,7 @@ footer a span {
     gap: 30px;
   }
   .section-heading h2 {
-    font-size: 44px;
+    font-size: var(--type-section-heading);
   }
 }
 @media (max-width: 520px) {
@@ -933,7 +938,7 @@ footer a span {
     padding-top: 48px;
   }
   .intro {
-    font-size: 16px;
+    font-size: var(--type-intro);
   }
   .hero-actions {
     align-items: flex-start;
@@ -960,7 +965,7 @@ footer a span {
     gap: 12px;
   }
   .section-heading h2 {
-    font-size: 45px;
+    font-size: var(--type-section-heading);
   }
   .mini-timeline {
     margin-top: 15px;
@@ -993,7 +998,7 @@ footer a span {
     font-size: 30px;
   }
   .page-hero h1 {
-    font-size: 58px;
+    font-size: var(--type-page);
   }
   .closing h2 {
     font-size: 42px;
@@ -1077,7 +1082,7 @@ footer a span {
   flex-shrink: 0;
   background: var(--panel);
   color: var(--text);
-  border: 1px solid var(--line);
+  border: var(--border-width) solid var(--line);
   border-radius: 25px;
   padding: 8px 14px;
   font-size: 12px;
@@ -1091,7 +1096,7 @@ footer a span {
   border-color: var(--text);
 }
 .theme-toggle:focus-visible {
-  outline: 2px solid var(--text);
+  outline: var(--focus-width) solid var(--text);
   outline-offset: 4px;
 }
 @media (max-width: 520px) {
@@ -1191,4 +1196,25 @@ nav a[aria-current] {
   background: var(--primary);
   color: var(--primary-foreground);
   font-size: 23px;
+}
+
+/* Shared emphasis and reduced-motion behavior. */
+.button {
+  font-size: var(--type-action);
+  font-weight: var(--weight-action);
+}
+.full {
+  font-size: 13px;
+}
+.eyebrow {
+  font-size: var(--type-label);
+}
+.card-copy small {
+  font-size: var(--type-meta);
+}
+@media (prefers-reduced-motion: reduce) {
+  .button:hover,
+  .project-card:hover .cover {
+    transform: none;
+  }
 }

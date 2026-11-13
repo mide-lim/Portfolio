@@ -1,6 +1,6 @@
 # Design system · midelim.com
 
-Versão 0.2 · 13/11/2026 · documento de trabalho.
+Versão 0.3 · 13/11/2026 · documento de trabalho.
 
 [Guia visual navegável](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) · [Código do guia](src/app/design-system/page.tsx) · [Decisões](docs/design-system/decisoes.md)
 
@@ -16,6 +16,7 @@ O portfólio apresenta a trajetória completa de Michel Marques: graduação em 
 | --- | --- |
 | [Fundamentos](docs/design-system/fundamentos.md) | Quais cores, proporções, fontes, espaços e movimentos usamos? |
 | [Componentes](docs/design-system/componentes.md) | Que peças já existem e como reutilizá-las? |
+| [Movimento](docs/design-system/movimento.md) | Quais ferramentas, durações e regras de animação usamos? |
 | [Conteúdo](docs/design-system/conteudo.md) | Como escrever as páginas com fatos e voz própria? |
 | [Fluxo e qualidade](docs/design-system/fluxo-e-qualidade.md) | Como trabalhar com IA, testar e publicar alterações? |
 | [Decisões](docs/design-system/decisoes.md) | O que está aprovado, proposto ou pendente? |
@@ -23,7 +24,7 @@ O portfólio apresenta a trajetória completa de Michel Marques: graduação em 
 
 ## Oficina de componentes
 
-O [catálogo navegável](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) separa 14 peças. Cada uma reúne amostra, papel das cores, textos atuais, pauta de revisão e arquivos de origem. Os endereços por hash permitem voltar à mesma peça, por exemplo `#abertura`.
+O [catálogo navegável](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) reúne fundamentos compartilhados e 21 peças, agrupadas por navegação. Cada ficha reúne amostra, átomos/composição, fontes, medidas em pixels, movimento, cores, textos atuais, pauta e arquivos de origem. Os endereços por hash permitem voltar à mesma peça, por exemplo `?view=home#abertura`. Links antigos por hash continuam funcionando.
 
 A composição segue a referência **60% base, 30% secundária, 10% destaque**. A proporção orienta a hierarquia visual; não é uma medição de pixels. O destaque fica concentrado em ações e estados, sem comprometer contraste ou alterar as cores da fotografia. Botões representam o destaque dentro do conjunto; não devem ser repartidos em três cores.
 
@@ -35,7 +36,7 @@ As amostras de Sidebar, ThemeToggle, ActionLink, ProjectCard, ProjectCover, Proj
 - Escuro: Charcoal, Sand e Electric Blue.
 - Fundo Sand sob o retrato, nos dois modos.
 - Menu: Home → About → Portfolio → Blog → Services.
-- Home longa com resumo; páginas internas com aprofundamento.
+- Home: Abertura → About → Portfolio → Blog → Services (CTA). Páginas internas aprofundam cada assunto.
 - Next.js App Router, TypeScript, Tailwind e GitHub Actions.
 - Componentes compartilhados e conteúdo separado do layout.
 
@@ -48,7 +49,9 @@ As amostras de Sidebar, ThemeToggle, ActionLink, ProjectCard, ProjectCover, Proj
 | Catálogo visual | Rota `/design-system/`; seleção de peças, amostras e pauta editorial |
 | ActionLink | Navegação principal/discreta compartilhada com a Home e o perfil |
 | Componentes existentes | Perfil, menu, tema, projetos, filtros e efeitos |
-| Escala de espaço | Proposta para novas peças; valores antigos preservados |
+| Espaço e geometria | Escala compartilhada, tokens de layout e exceções por componente |
+| Tipografia | Famílias, tamanhos, pesos e entrelinhas documentados e centralizados |
+| Motion | CSS e APIs nativas, durações compartilhadas; sem biblioteca externa |
 | Escrita | Direção documentada; revisão dos textos públicos ainda pendente |
 | shadcn/ui e seu MCP | Avaliar quando houver um componente que os justifique; não instalados |
 | Storybook | Adiado enquanto o guia local atende ao catálogo; não instalado |

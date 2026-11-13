@@ -49,7 +49,20 @@ for (const route of routes) {
     }
   }
 }
+const home = await readFile(path.join(output, "index.html"), "utf8");
+let previous = -1;
+for (const id of [
+  "abertura",
+  "trajetoria",
+  "destaques",
+  "caderno",
+  "colaboracao",
+]) {
+  const index = home.indexOf('id="' + id + '"');
+  assert.ok(index > previous, "Home section missing or out of order: " + id);
+  previous = index;
+}
 console.log(
   routes.length +
-    " routes checked: page content, portrait, links, anchors and local assets.",
+    " routes checked: page content, portrait, links, anchors, local assets and Home section order.",
 );
