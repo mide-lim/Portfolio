@@ -11,7 +11,7 @@ Este repositório integra o projeto Curriculo + Processo Seletivo. O portfólio 
 
 ## Interface
 
-- A Home segue Abertura → About → Portfolio → Blog → Services (CTA). Perfil, menu e rodapé são globais.
+- A Home segue Abertura → About → Portfolio → Blog → Services (CTA). Perfil, menu e rodapé são globais nas páginas do portfólio; o DS usa estrutura própria.
 - Consulte `src/content/design-standards.ts` e `docs/design-system/movimento.md` ao alterar tipografia, geometria ou animação.
 - Registre por peça: átomos/composição, fontes, medidas, comportamento responsivo, movimento e comunicação. Agrupe no DS também por navegação.
 - Preserve as duas paletas e a ordem Home, About, Portfolio, Blog, Services, salvo pedido de mudança.

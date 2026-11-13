@@ -807,3 +807,26 @@
     transform: none;
   }
 }
+
+/* The design system has its own focused shell. */
+.ds-shell {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 3.4% 48px;
+}
+.ds-shell-header {
+  min-height: 64px;
+  border-bottom: 1px solid var(--border);
+}
+.ds-back-link {
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+.ds-back-link:hover {
+  color: var(--foreground);
+}
+@media (max-width: 800px) {
+  .ds-shell {
+    padding: 0 18px 40px;
+  }
+}

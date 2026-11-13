@@ -58,7 +58,7 @@ As amostras de Sidebar, ThemeToggle, ActionLink, ProjectCard, ProjectCover, Proj
 | Vercel / domínio | Conexão e DNS ainda pendentes |
 | Revisão visual automatizada | Pendente por indisponibilidade do navegador |
 
-O guia está fora do menu principal e usa `noindex`. Não é uma área autenticada separada: acompanha a audiência da hospedagem.
+O guia tem estrutura própria, sem perfil lateral, menu ou rodapé do portfólio. O topo mantém retorno ao site e alternância de tema; o perfil permanece como amostra no catálogo. O guia está fora do menu principal e usa `noindex`. Não é uma área autenticada separada: acompanha a audiência da hospedagem.
 
 ## Fonte de verdade
 

@@ -22,7 +22,16 @@ const routes = [
 for (const route of routes) {
   const html = await readFile(path.join(output, route, "index.html"), "utf8");
   assert.match(html, /<h1[ >]/, "Heading missing on " + route);
-  assert.match(html, /michel-marques.webp/, "Portrait missing on " + route);
+  if (route !== "/design-system/")
+    assert.match(html, /michel-marques.webp/, "Portrait missing on " + route);
+  else {
+    assert.doesNotMatch(
+      html,
+      /aria-label="Perfil de Michel Marques"/,
+      "DS outer profile should not render",
+    );
+    assert.match(html, /Voltar ao portfólio/, "DS back link missing");
+  }
   assert.doesNotMatch(
     html,
     /data-page=.*?hidden/,

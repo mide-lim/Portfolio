@@ -1,7 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Sidebar } from "@/components/sidebar";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { SiteShell } from "@/components/site-shell";
 import { PageEffects } from "@/components/page-effects";
 import { site } from "@/content/site";
 import { themeScript } from "@/lib/theme-script";
@@ -35,16 +33,7 @@ export default function RootLayout({
           Pular para o conteúdo
         </a>
         <PageEffects />
-        <div className="shell">
-          <Sidebar />
-          <div className="workspace">
-            <Header />
-            <main id="main" tabIndex={-1}>
-              {children}
-            </main>
-            <Footer />
-          </div>
-        </div>
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );

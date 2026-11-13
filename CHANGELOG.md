@@ -1,5 +1,12 @@
 # Histórico de desenvolvimento
 
+## 2026-11-13 · Estrutura dedicada ao design system
+
+- Removidos perfil lateral, menu e rodapé do portfólio da página de DS.
+- Incluídos retorno ao portfólio e controle de tema em uma barra discreta.
+- A amostra do componente Perfil continua disponível no catálogo.
+
+
 ## 2026-11-13 · Fundamentos, anatomia e navegação do DS
 
 - Home corrigida para Abertura, About, Portfolio, Blog e Services (CTA).
