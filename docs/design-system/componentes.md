@@ -93,3 +93,9 @@ A pauta lista decisões a trabalhar, não afirma que os textos atuais estão apr
 `src/content/design-standards.ts` mantém as fichas de medida e composição. Valores executados vivem em `src/design/tokens.css` e `globals.css`. Não tratar capa, card, marco ou grade como átomo: são composições de partes menores. A ficha mostra ambas as camadas.
 
 O contexto da página é preservado em `?view=about#pagina-interna` (ou portfolio/blog/services); o mesmo padrão de abertura consulta o texto da página escolhida. Filtros inválidos não devem esconder a peça selecionada.
+
+## Perfil · atualização de 13/11/2026
+
+O perfil usa monograma vetorial em avaliação, retrato sobre Sand, frentes de software e cibersegurança e contatos com ícones. LinkedIn, GitHub e Gmail têm destinos configurados em `src/content/site.ts`; Discord está identificado como pendente, sem link.
+
+`ProfileAction` anima a seta na diagonal e de volta em 360 ms antes da navegação, sem atraso quando movimento reduzido está ativo; modificadores de clique preservam o comportamento nativo. Links sociais recebem realce inferior no hover e foco apenas no perfil. `SocialIcon` reúne os ícones. Ver `src/content/design-standards.ts` para medidas e ficha atual.

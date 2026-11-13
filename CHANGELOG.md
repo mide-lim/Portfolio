@@ -1,5 +1,12 @@
 # Histórico de desenvolvimento
 
+## 2026-11-13 · Continuidade entre ambientes
+
+- Criado contexto de continuidade com decisões, arquitetura, estado de publicação e pendências.
+- Atualizada a documentação do perfil, CTA, contatos e marca em avaliação.
+- Registrada a pendência do favicon e a necessidade de revisão visual.
+
+
 ## 2026-11-13 · Revisão do perfil
 
 - Marca vetorial experimental com monograma M, sinais de código e ponto de destaque.

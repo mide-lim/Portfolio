@@ -4,7 +4,7 @@ Este repositório integra o projeto Curriculo + Processo Seletivo. O portfólio 
 
 ## Antes de alterar interface ou conteúdo
 
-- Leia `DESIGN.md` e o documento relevante em `docs/design-system/`.
+- Leia `docs/CONTEXTO-ATUAL.md`, `DESIGN.md` e o documento relevante em `docs/design-system/`.
 - Consulte `src/design/tokens.css`, os componentes existentes e `src/content/`.
 - Leia `docs/design-system/decisoes.md` para distinguir decisões aprovadas de propostas.
 - As instruções explícitas do usuário e o escopo da tarefa prevalecem. Execute alterações já autorizadas; não crie etapas de aprovação desnecessárias.

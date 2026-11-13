@@ -47,8 +47,9 @@ As amostras de Sidebar, ThemeToggle, ActionLink, ProjectCard, ProjectCover, Proj
 | Tokens de cor, fontes e aliases | Centralizados em `src/design/tokens.css` |
 | Integração Tailwind | Cores semânticas disponíveis por `@theme inline` |
 | Catálogo visual | Rota `/design-system/`; seleção de peças, amostras e pauta editorial |
-| ActionLink | Navegação principal/discreta compartilhada com a Home e o perfil |
+| ActionLink | Navegação principal/discreta compartilhada com a Home; o perfil usa ProfileAction para a animação |
 | Componentes existentes | Perfil, menu, tema, projetos, filtros e efeitos |
+| Perfil e marca | Monograma vetorial em proposta; redes e animação implementadas; Discord pendente |
 | Espaço e geometria | Escala compartilhada, tokens de layout e exceções por componente |
 | Tipografia | Famílias, tamanhos, pesos e entrelinhas documentados e centralizados |
 | Motion | CSS e APIs nativas, durações compartilhadas; sem biblioteca externa |

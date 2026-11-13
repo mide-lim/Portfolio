@@ -13,6 +13,8 @@ Atualizado em 13/11/2026. Esta é a pauta para organizar o sistema em conjunto.
 | DS-05 | Pendente | Evidências e contribuição individual em projetos | Reunir capturas, resultados e responsabilidades |
 | DS-06 | Pendente | Revisão visual e acessibilidade manual | Navegador de revisão indisponível no ambiente |
 | DS-07 | Aprovado / implementado | Composição 60/30/10 e DS por componente | Pedido explícito de 13/11/2026 |
+| DS-08 | Implementado | Fundamentos e ordem da Home | Pedido explícito de 13/11/2026 |
+| DS-09 | Implementado / marca em avaliação | Revisão do perfil e contatos | Pedido explícito de 13/11/2026 |
 
 ## DS-01 · Identidade
 
@@ -71,3 +73,9 @@ Pedido explícito: Home em Abertura, About, Portfolio, Blog e Services como CTA;
 Implementado: ordem da Home corrigida, rolagem inicial para About, fundamentos antes do catálogo, 21 peças por página, fichas com medidas e composição, padrões de comunicação. Valores tipográficos/layout/motion existentes centralizados em CSS. Documentação de animação separada. Sem inclusão de biblioteca externa ou nova redação pública. Stickers tratados como etiquetas e marcadores visuais.
 
 O catálogo mostra os padrões compartilhados e as exceções existentes, sem alegar uma normalização completa de todos os pixels. Valores reduzidos das amostras são identificados. Revisão visual manual segue pendente por indisponibilidade do navegador.
+
+## DS-09 · Perfil · 13/11/2026
+
+Atualizadas as frentes, adicionados ícones e contatos, realce de hover/foco somente no perfil e animação da seta no CTA com respeito a movimento reduzido. Discord permanece sem destino confirmado. O monograma M com sinais de código é uma proposta implementada para avaliação, não uma marca final aprovada.
+
+A primeira imagem de pixel art escolhida para favicon ainda não foi aplicada devido à falha de recuperação do arquivo. Ver [contexto de continuidade](../CONTEXTO-ATUAL.md).

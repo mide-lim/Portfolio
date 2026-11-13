@@ -2,7 +2,7 @@
 
 Portfólio pessoal para apresentar minha trajetória em Segurança da Informação, formação na 42 Rio e projetos autorais com IA.
 
-[Site em desenvolvimento](https://midelim-portfolio-preview.creamgown2.chatgpt.site/) · [Histórico](CHANGELOG.md)
+[Site em desenvolvimento](https://midelim-portfolio-preview.creamgown2.chatgpt.site/) · [Histórico](CHANGELOG.md) · [Contexto de continuidade](docs/CONTEXTO-ATUAL.md)
 
 ## Design system
 
