@@ -29,11 +29,15 @@ export const catalog: CatalogItem[] = [
       field("Nome", site.name),
       field("Frentes", site.fronts.join(" ")),
       field("Localização", site.location),
+      field(
+        "Contatos",
+        "LinkedIn · GitHub · Gmail · Discord (endereço pendente)",
+      ),
       field("Ação", site.projectAction),
     ],
     review: [
-      "Definir uma apresentação curta que tenha a sua voz.",
-      "Rever a hierarquia entre formação, prática e interesse atual.",
+      "Confirmar o endereço do Discord antes de ativar o link.",
+      "Revisar a proposta de marca e os estados das ações.",
     ],
     colors: [
       "Superfície do cartão e espaço entre informações.",

@@ -142,7 +142,8 @@ export const componentSpecs: Record<
     type: "Space Grotesk: nome 26/23/18 px, peso 600; marca 68/45 px. DM Sans: informações 15 px; CTA 13 px.",
     geometry:
       "Coluna 285/240 px; padding 26/20 px. Mobile: 16 × 20 px. Raio 30 px, mobile 20. Foto 265 px de altura (220 no intermediário); mobile 58 × 70.",
-    motion: "CTA: 250 ms / −3 px; perfil sem animação de entrada.",
+    motion:
+      "Links sociais: realce inferior no hover/foco. CTA: seta desloca 5 px na diagonal e retorna em 360 ms no clique; navegação respeita movimento reduzido.",
   },
   menu: {
     atoms: ["Link", "Rótulo", "Indicador ativo"],

@@ -4,8 +4,10 @@ export const site = {
   description:
     "Trajetória de Michel Marques em Segurança da Informação, formação na 42 Rio e projetos autorais com IA.",
   github: "https://github.com/mide-lim",
+  linkedin: "https://www.linkedin.com/in/midelim/",
+  email: "midelim.dev@gmail.com",
   location: "Rio de Janeiro, Brasil",
-  fronts: ["Segurança da informação,", "software e IA aplicada."],
+  fronts: ["Engenheiro de Software", "e cibersegurança"],
   projectAction: "Explore meus projetos",
   navigation: [
     { href: "/", label: "Home" },

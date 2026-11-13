@@ -1,5 +1,12 @@
 # Histórico de desenvolvimento
 
+## 2026-11-13 · Revisão do perfil
+
+- Marca vetorial experimental com monograma M, sinais de código e ponto de destaque.
+- Frentes, redes e contato atualizados; Discord identificado como pendente.
+- Hover exclusivo dos links sociais e animação da seta no CTA, com movimento reduzido.
+
+
 ## 2026-11-13 · Estrutura dedicada ao design system
 
 - Removidos perfil lateral, menu e rodapé do portfólio da página de DS.
