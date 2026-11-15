@@ -86,3 +86,7 @@ O GitHub é a linha do tempo versionada. A prévia usa um repositório de origem
 3. Rever com Michel a proposta do perfil e obter o contato de Discord.
 4. Retomar o favicon somente com a primeira arte escolhida.
 5. Trabalhar a comunicação do próximo componente com Michel; registrar decisões e testes no mesmo marco.
+
+## Atualização da Home · 15/11/2026
+
+Michel forneceu a nova apresentação pessoal, aplicada após revisão de pontuação e sintaxe. O componente HeroBottom agrupa áreas de interesse e o acesso à trajetória. Hover e foco usam o destaque do tema; setas de navegação têm deslocamento conforme a direção e respeitam movimento reduzido. Revisar visualmente desktop/celular e os dois temas.

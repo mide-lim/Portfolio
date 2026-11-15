@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { ArrowText } from "@/components/ui/arrow-text";
 import { Sidebar } from "@/components/sidebar";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -12,7 +13,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <div className="ds-shell">
         <header className="ds-shell-header">
           <Link href="/" className="ds-back-link">
-            ← Voltar ao portfólio
+            <ArrowText>{"← Voltar ao portfólio"}</ArrowText>
           </Link>
           <ThemeToggle />
         </header>

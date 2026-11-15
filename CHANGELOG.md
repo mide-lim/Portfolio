@@ -1,5 +1,12 @@
 # Histórico de desenvolvimento
 
+## 2026-11-15 · Abertura e interação
+
+- Atualizada a comunicação da Home com o texto indicado por Michel.
+- Criado componente reutilizável para áreas de interesse e acesso à trajetória.
+- Padronizados os efeitos de hover/foco e movimentos direcionais nas setas.
+
+
 ## 2026-11-13 · Continuidade entre ambientes
 
 - Criado contexto de continuidade com decisões, arquitetura, estado de publicação e pendências.

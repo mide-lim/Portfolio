@@ -1,4 +1,5 @@
 import type { Project } from "@/content/projects";
+import { ArrowText } from "@/components/ui/arrow-text";
 
 export function ProjectCover({ project }: { project: Project }) {
   return (
@@ -83,7 +84,7 @@ export function ProjectCover({ project }: { project: Project }) {
           <span className="cover-label">INCEPTION / CONTAINERS</span>
         </>
       )}
-      <span className="open">↗</span>
+      <span className="open"><ArrowText>{"↗"}</ArrowText></span>
     </div>
   );
 }

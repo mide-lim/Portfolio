@@ -111,9 +111,8 @@ export const catalog: CatalogItem[] = [
       field("Ação secundária", home.conheca_minha_trajetoria.trim()),
     ],
     review: [
-      "Substituir a frase ampla por uma apresentação mais pessoal.",
-      "Definir o que o visitante precisa entender na primeira leitura.",
-      "Ajustar quebras de linha depois de fechar o texto.",
+      "Avaliar a nova apresentação em primeira pessoa e suas quebras de linha.",
+      "Conferir a leitura e o espaço da abertura nos dois temas e no celular.",
     ],
     colors: [
       "Fundo e respiro da abertura.",

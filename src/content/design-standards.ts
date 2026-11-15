@@ -13,7 +13,7 @@ export const typography = [
     "--type-home",
     "Space Grotesk",
     "500",
-    "62–112 px fluido; ≤1100: 76; ≤800: 60–90 fluido",
+    "39–76 px fluido; ≤520: 36–52 px fluido",
     "1,06",
   ],
   [
@@ -170,7 +170,7 @@ export const componentSpecs: Record<
     type: "H1 Home + introdução + identificador + ação.",
     geometry:
       "Padding superior 100/80/35 px; até 800 permanece 35. Ações: gap 30/18/20. Altura mínima 740 px; ≥1550: 850; ≤1100: 680; ≤800: 660; ≤520: 610.",
-    motion: "Ações 250 ms; âncora nativa. Texto aparece sem atraso.",
+    motion: "Ações 250 ms com realce; setas seguem sua direção. Âncora nativa; texto sem atraso.",
   },
   titulo: {
     atoms: ["Identificador", "H2", "Link"],

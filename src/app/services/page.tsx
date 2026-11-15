@@ -1,5 +1,6 @@
 import { ActionLink } from "@/components/ui/action-link";
 import { services as copy } from "@/content/pages";
+import { ArrowText } from "@/components/ui/arrow-text";
 export const metadata = { title: "Services" };
 
 export default function Page() {
@@ -59,7 +60,7 @@ export default function Page() {
           target="_blank"
           rel="noopener"
         >
-          {copy.meu_github}
+          <ArrowText>{copy.meu_github}</ArrowText>
         </a>
       </div>
     </section>

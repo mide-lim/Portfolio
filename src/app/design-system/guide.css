@@ -830,3 +830,12 @@
     padding: 0 18px 40px;
   }
 }
+/* Apply the same hover accent to controls in the component workshop. */
+.ds-picker button:hover, .ds-picker button:focus-visible,
+.ds-foundation-tabs button:hover, .ds-foundation-tabs button:focus-visible,
+.ds-page-groups button:hover, .ds-page-groups button:focus-visible,
+.ds-mini-controls button:hover, .ds-mini-controls button:focus-visible,
+.ds-utility-button:hover, .ds-utility-button:focus-visible {
+  box-shadow: inset 0 -2px var(--primary);
+}
+.ds-home-sample .hero-explore { margin-top: 36px; }

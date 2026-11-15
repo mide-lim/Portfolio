@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowText } from "@/components/ui/arrow-text";
 import { about as copy } from "@/content/pages";
 export const metadata = { title: "About" };
 
@@ -79,19 +80,19 @@ export default function Page() {
         <div className="skill-grid">
           <Link href="/portfolio/minishell/">
             <strong>{copy.programacao_de_sistemas}</strong>
-            <span>{copy.minishell_processos_pipes_e_sinais}</span>
+            <span><ArrowText>{copy.minishell_processos_pipes_e_sinais}</ArrowText></span>
           </Link>
           <Link href="/portfolio/cub3d/">
             <strong>{copy.computacao_grafica}</strong>
-            <span>{copy.cub3d_raycasting_e_interacao}</span>
+            <span><ArrowText>{copy.cub3d_raycasting_e_interacao}</ArrowText></span>
           </Link>
           <Link href="/portfolio/philosophers/">
             <strong>{copy.concorrencia}</strong>
-            <span>{copy.philosophers_threads_e_mutexes}</span>
+            <span><ArrowText>{copy.philosophers_threads_e_mutexes}</ArrowText></span>
           </Link>
           <Link href="/portfolio/inception/">
             <strong>{copy.infraestrutura}</strong>
-            <span>{copy.inception_containers_e_servicos}</span>
+            <span><ArrowText>{copy.inception_containers_e_servicos}</ArrowText></span>
           </Link>
         </div>
       </div>

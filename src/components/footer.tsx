@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowText } from "@/components/ui/arrow-text";
 export function Footer() {
   return (
     <footer>
@@ -6,7 +7,7 @@ export function Footer() {
         midelim<span>.</span>com
       </Link>
       <span>Michel Marques · Rio de Janeiro</span>
-      <Link href="/">Voltar ao início ↑</Link>
+      <Link href="/"><ArrowText>{"Voltar ao início ↑"}</ArrowText></Link>
     </footer>
   );
 }

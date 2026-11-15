@@ -14,7 +14,7 @@ Famílias em `src/design/tokens.css`; carregamento em `src/app/layout.tsx`. Goog
 
 | Papel | Fonte | Token | Tamanho | Peso / entrelinha |
 | --- | --- | --- | --- | --- |
-| H1 Home | Space Grotesk | --type-home | clamp(62px, 7.3vw, 112px); ≤1100: 76; ≤800: clamp(60px, 12vw, 90px) | 500 / 1,06 |
+| H1 Home | Space Grotesk | --type-home | clamp(39px, 5.2vw, 76px); ≤520: clamp(36px, 10vw, 52px) para .hero-title | 500 / 1,06 |
 | H1 internas | Space Grotesk | --type-page | clamp(58px, 6.5vw, 94px); ≤800: 65; ≤520: 58 | 500 / 1,06 |
 | H2 | Space Grotesk | --type-section | clamp(35px, 4.3vw, 64px) | 500 / 1,06 |
 | Título de seção Home | Space Grotesk | --type-section-heading | H2; ≤800: 44; ≤520: 45 | 500 / 1,06 |

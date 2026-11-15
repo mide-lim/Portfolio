@@ -31,3 +31,9 @@ Com `prefers-reduced-motion: reduce`: sem animações/transições, sem deslocam
 ## Ferramentas não presentes
 
 GSAP, Lenis, Framer Motion e parallax não estão implementados. A existência de efeitos nas referências visuais não demonstra que o portfólio use essas bibliotecas. Só acrescentar ferramenta quando um comportamento necessário não for bem atendido pelo padrão atual.
+
+## Revisão de hover e setas · 15/11/2026
+
+- Controles de navegação, filtros, tema e ações recebem realce inferior ou sombra na cor de destaque do tema no hover e foco. Links de texto recebem sublinhado de destaque.
+- Setas de navegação se deslocam 4 px na direção indicada ao passar o mouse ou focar com teclado; são decorativas para leitores de tela. O CTA do perfil mantém sua animação de clique.
+- O componente reutilizável HeroBottom agrupa áreas de interesse e acesso à trajetória na abertura. Movimento reduzido desativa o deslocamento das setas.

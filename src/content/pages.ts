@@ -1,20 +1,20 @@
 // Textos preservados da prévia aprovada. Próxima etapa: revisão editorial.
 
 export const home = {
-  prazer_michel_marques: " PRAZER, MICHEL MARQUES",
-  curiosidade: "Curiosidade",
-  que_vira: "que vira",
-  construcao: "construção.",
+  prazer_michel_marques: "Bem-vindo ao meu perfil. Eu me chamo",
+  curiosidade: "Michel Marques,",
+  que_vira: "sou engenheiro de software",
+  construcao: "e desenvolvedor full-stack.",
   da_seguranca_da_informacao_a_engenharia:
-    "Da segurança da informação à engenharia de software.",
+    "Sou qualificado para projetar sistemas e criar projetos digitais.",
   hoje_explorando_novas_possibilidades_com_ia:
-    "Hoje, explorando novas possibilidades com IA.",
+    "Atualmente, meu foco é o desenvolvimento full-stack de aplicações web e mobile.",
   explorar_projetos: "Explorar projetos ",
   symbol: "↗",
   conheca_minha_trajetoria: "Conheça minha trajetória ",
   symbol_2: "→",
-  c_c_software_ia: "C · C++ · SOFTWARE · IA",
-  role_para_explorar: "ROLE PARA EXPLORAR ",
+  c_c_software_ia: "Software · Segurança · IA",
+  role_para_explorar: "Conheça minha trajetória",
   symbol_3: "↓",
   portfolio: "PORTFOLIO",
   ideias_em: "Ideias em",

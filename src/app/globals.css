@@ -1327,3 +1327,52 @@ nav a[aria-current] {
     animation: none;
   }
 }
+
+/* Shared hover language and directional links. */
+nav a, .filters button, .theme-toggle, .text-link, .hero-explore-link,
+.skill-grid a, .article-preview, footer a {
+  transition: color var(--duration-state) var(--ease-standard),
+    background var(--duration-state) var(--ease-standard),
+    border-color var(--duration-state) var(--ease-standard),
+    box-shadow var(--duration-state) var(--ease-standard);
+}
+nav a:hover, nav a:focus-visible,
+.filters button:hover, .filters button:focus-visible,
+.theme-toggle:hover, .theme-toggle:focus-visible,
+.skill-grid a:hover, .skill-grid a:focus-visible,
+.article-preview:hover, .article-preview:focus-visible {
+  border-color: var(--border);
+  box-shadow: inset 0 -2px var(--primary);
+}
+.button:hover, .button:focus-visible {
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--primary) 32%, transparent);
+}
+.text-link:hover, .text-link:focus-visible {
+  color: var(--foreground);
+  border-color: var(--primary);
+  box-shadow: 0 2px 0 var(--primary);
+}
+.direction-arrow { display: inline-block; transition: transform var(--duration-interaction) var(--ease-standard); }
+:is(a, button):is(:hover, :focus-visible) .direction-arrow--east { transform: translateX(4px); }
+:is(a, button):is(:hover, :focus-visible) .direction-arrow--west { transform: translateX(-4px); }
+:is(a, button):is(:hover, :focus-visible) .direction-arrow--north { transform: translateY(-4px); }
+:is(a, button):is(:hover, :focus-visible) .direction-arrow--south { transform: translateY(4px); }
+:is(a, button):is(:hover, :focus-visible) .direction-arrow--northeast { transform: translate(4px, -4px); }
+
+/* The longer introduction needs its own scale and a reusable closing cue. */
+.hero .hero-title { max-width: 1000px; font-size: clamp(39px, 5.2vw, 76px); line-height: 1.08; overflow-wrap: anywhere; }
+.hero-explore { margin-top: 72px; padding: 20px 0 0; border-top: 1px solid var(--border); align-items: center; }
+.hero-explore-areas { display: grid; gap: 5px; }
+.hero-explore-areas > span { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; }
+.hero-explore-areas strong { font-size: 12px; letter-spacing: 0; font-weight: 500; color: var(--foreground); }
+.hero-explore-link { display: inline-flex; gap: 12px; align-items: center; font-size: 11px; letter-spacing: 0; color: var(--foreground); }
+.hero-explore-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); font-size: 18px; }
+.hero-explore-link:hover .hero-explore-icon, .hero-explore-link:focus-visible .hero-explore-icon { border-color: var(--primary); box-shadow: inset 0 -2px var(--primary); }
+@media (max-width: 520px) {
+  .hero .hero-title { font-size: clamp(36px, 10vw, 52px); }
+  .hero-explore { margin-top: 48px; flex-wrap: wrap; }
+  .hero-explore-areas { max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) { .direction-arrow { transition: none; } :is(a, button):is(:hover, :focus-visible) .direction-arrow { transform: none; } }
+
+.skill-grid .direction-arrow { display: inline-block; }

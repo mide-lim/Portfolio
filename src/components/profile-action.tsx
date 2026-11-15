@@ -37,7 +37,7 @@ export function ProfileAction() {
       <span className="profile-action-label">{site.projectAction}</span>
       <span
         aria-hidden="true"
-        className={"profile-arrow" + (moving ? " is-moving" : "")}
+        className={"profile-arrow direction-arrow direction-arrow--northeast" + (moving ? " is-moving" : "")}
       >
         ↗
       </span>

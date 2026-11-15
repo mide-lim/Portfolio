@@ -17,6 +17,8 @@ import { resolveDesignSelection } from "@/lib/design-navigation";
 import { Foundations } from "./foundations";
 import { componentSpecs, componentGroups } from "@/content/design-standards";
 import { ProjectGrid } from "@/components/project-grid";
+import { HeroBottom } from "@/components/hero-bottom";
+import { ArrowText } from "@/components/ui/arrow-text";
 
 function Actions() {
   return (
@@ -73,6 +75,7 @@ function Sample({ id, context }: { id: string; context: string }) {
             {home.hoje_explorando_novas_possibilidades_com_ia}
           </p>
           <Actions />
+          <HeroBottom />
         </div>
       );
     case "titulo":
@@ -153,9 +156,7 @@ function Sample({ id, context }: { id: string; context: string }) {
             <h3>{home.o_que_acontece_entre_digitar_um}</h3>
             <p>{home.uma_pauta_a_partir_da_experiencia}</p>
           </div>
-          <span className="circle-arrow" aria-hidden="true">
-            ↗
-          </span>
+          <span className="circle-arrow"><ArrowText>{"↗"}</ArrowText></span>
         </Link>
       );
     case "servico":

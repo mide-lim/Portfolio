@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { projects } from "@/content/projects";
 import { ProjectCover } from "@/components/project-cover";
 import { ProjectCard } from "@/components/project-card";
+import { ArrowText } from "@/components/ui/arrow-text";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -23,7 +24,7 @@ export default async function ProjectPage({ params }: Props) {
     <>
       <div className="page-hero">
         <Link className="text-link" href="/portfolio/">
-          ← Todos os projetos
+          <ArrowText>{"← Todos os projetos"}</ArrowText>
         </Link>
         <h1>{project.name}</h1>
         <p className="intro">{project.summary}</p>
@@ -49,7 +50,7 @@ export default async function ProjectPage({ params }: Props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Explorar código ↗
+              <ArrowText>{"Explorar código ↗"}</ArrowText>
             </a>
           )}
         </div>

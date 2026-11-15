@@ -2,6 +2,8 @@ import { ActionLink } from "@/components/ui/action-link";
 import Link from "next/link";
 import { home as copy } from "@/content/pages";
 import { ProjectGrid } from "@/components/project-grid";
+import { HeroBottom } from "@/components/hero-bottom";
+import { ArrowText } from "@/components/ui/arrow-text";
 
 export default function Page() {
   return (
@@ -11,7 +13,7 @@ export default function Page() {
           <i></i>
           {copy.prazer_michel_marques}
         </span>
-        <h1>
+        <h1 className="hero-title">
           {copy.curiosidade}
           <br />
           {copy.que_vira}
@@ -33,13 +35,7 @@ export default function Page() {
             <span>{copy.symbol_2}</span>
           </ActionLink>
         </div>
-        <div className="hero-bottom">
-          <span>{copy.c_c_software_ia}</span>
-          <Link href="/#trajetoria" aria-label="Rolar para a trajetória">
-            {copy.role_para_explorar}
-            <b>{copy.symbol_3}</b>
-          </Link>
-        </div>
+        <HeroBottom />
       </div>
       <section className="section" id="trajetoria">
         <div className="section-heading">
@@ -114,7 +110,7 @@ export default function Page() {
             <h3>{copy.o_que_acontece_entre_digitar_um}</h3>
             <p>{copy.uma_pauta_a_partir_da_experiencia}</p>
           </div>
-          <span className="circle-arrow">{copy.symbol}</span>
+          <span className="circle-arrow"><ArrowText>{copy.symbol}</ArrowText></span>
         </Link>
       </section>
       <div className="closing" id="colaboracao">
