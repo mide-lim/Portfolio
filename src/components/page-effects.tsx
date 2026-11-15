@@ -10,7 +10,7 @@ export function PageEffects() {
     const legacyRoute = () => {
       if (location.pathname !== "/") return;
       const hash = location.hash.slice(1);
-      if (["home", "about", "portfolio", "blog", "services"].includes(hash))
+      if (["home", "about", "resume", "portfolio", "blog", "services"].includes(hash))
         router.replace(hash === "home" ? "/" : "/" + hash + "/");
       else if (hash.startsWith("project-"))
         router.replace("/portfolio/" + encodeURIComponent(hash.slice(8)) + "/");

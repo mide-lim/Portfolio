@@ -6,6 +6,7 @@ const output = path.resolve("out");
 const routes = [
   "/",
   "/about/",
+  "/resume/",
   "/portfolio/",
   "/blog/",
   "/services/",
@@ -59,6 +60,18 @@ for (const route of routes) {
   }
 }
 const home = await readFile(path.join(output, "index.html"), "utf8");
+const navigation = home.match(/<nav aria-label="Navegação principal">([\s\S]*?)<\/nav>/)?.[1];
+assert.ok(navigation, "Main navigation missing");
+let previousNav = -1;
+for (const href of ["/", "/about/", "/resume/", "/portfolio/", "/blog/", "/services/"]) {
+  const index = navigation.indexOf('href="' + href + '"');
+  assert.ok(index > previousNav, "Navigation missing or out of order: " + href);
+  previousNav = index;
+}
+const resume = await readFile(path.join(output, "resume", "index.html"), "utf8");
+for (const content of ["Faculdade Souza Marques", "800 chamados", "UniCarioca", "Minishell", "MongoDB", "Inglês proficiente"]) {
+  assert.ok(resume.includes(content), "Resume content missing: " + content);
+}
 let previous = -1;
 for (const id of [
   "abertura",

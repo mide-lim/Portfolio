@@ -2,7 +2,7 @@
 
 [Guia com amostras reais](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/#perfil)
 
-Os fundamentos aparecem antes da oficina. O catálogo tem 21 peças, organizadas por Globais, Home, About, Portfolio, Blog e Services.
+Os fundamentos aparecem antes da oficina. O catálogo tem 21 peças, organizadas por Globais, Home, About, Resume, Portfolio, Blog e Services.
 
 A oficina separa perfil, navegação, tema, abertura, título de seção, ações, card, capa, filtros, trajetória, artigo, serviço, chamada final e rodapé. Cada peça tem amostra, átomos/composição, tipografia, medidas, movimento, funções 60/30/10, textos atuais, pauta de revisão e arquivos de origem.
 
@@ -99,3 +99,7 @@ O contexto da página é preservado em `?view=about#pagina-interna` (ou portfoli
 O perfil usa monograma vetorial em avaliação, retrato sobre Sand, frentes de software e cibersegurança e contatos com ícones. LinkedIn, GitHub e Gmail têm destinos configurados em `src/content/site.ts`; Discord está identificado como pendente, sem link.
 
 `ProfileAction` anima a seta na diagonal e de volta em 360 ms antes da navegação, sem atraso quando movimento reduzido está ativo; modificadores de clique preservam o comportamento nativo. Links sociais recebem realce inferior no hover e foco apenas no perfil. `SocialIcon` reúne os ícones. Ver `src/content/design-standards.ts` para medidas e ficha atual.
+
+## Resume · 15/11/2026
+
+Resume usa a abertura de página interna, seções editoriais e conteúdo em `src/content/resume.ts`. No DS, a categoria Resume oferece a amostra da abertura; experiência, formação, projetos, conhecimentos e idiomas estão visíveis na página real.

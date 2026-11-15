@@ -51,7 +51,7 @@ Não preencher lacunas com resultados plausíveis. Percentuais, escalas e datas 
 
 ## Fatos e cuidados já conhecidos
 
-- Graduação em Segurança da Informação.
+- Graduação em Cibersegurança pela UniCarioca, concluída em 2026.
 - Formação na 42 Rio em andamento no histórico consultado de novembro de 2026.
 - Projetos em C e C++ e trabalhos autorais com IA.
 - MEGA-BRAIN é um dos projetos, não o único eixo do portfólio.

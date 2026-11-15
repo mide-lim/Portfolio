@@ -1,6 +1,7 @@
 import { home, services, about, blog, portfolio } from "./pages";
 import { site } from "./site";
 import { projects } from "./projects";
+import { resume } from "./resume";
 
 type Field = { label: string; value: string };
 export type CatalogItem = {
@@ -55,7 +56,7 @@ export const catalog: CatalogItem[] = [
     contentSource: "src/content/site.ts",
     fields: site.navigation.map((x) => field(x.label, x.href)),
     review: [
-      "Ordem já definida: Home, About, Portfolio, Blog, Services.",
+      "Ordem definida: Home, About, Resume, Portfolio, Blog, Services.",
       "Conferir espaço entre links e leitura no celular.",
     ],
     colors: [
@@ -379,6 +380,11 @@ export const pageIntros: Record<
     label: about.about,
     title: [about.o_percurso, about.por_tras, about.do_codigo].join(" "),
     intro: about.seguranca_da_informacao_formacao_pratica_na,
+  },
+  resume: {
+    label: "RESUME · MICHEL MARQUES",
+    title: resume.title,
+    intro: resume.introduction,
   },
   portfolio: {
     label: portfolio.portfolio,

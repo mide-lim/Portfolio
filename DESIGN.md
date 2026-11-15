@@ -8,7 +8,7 @@ Versão 0.3 · 13/11/2026 · documento de trabalho.
 
 Manter a identidade do portfólio enquanto suas páginas, projetos e textos evoluem. O sistema usa o próprio site como referência visual e fornece regras verificáveis para pessoas e agentes de IA.
 
-O portfólio apresenta a trajetória completa de Michel Marques: graduação em Segurança da Informação, formação em andamento na 42 Rio e projetos autorais com IA. A comunicação não deve ser reduzida a uma vaga específica.
+O portfólio apresenta a trajetória completa de Michel Marques: graduação em Cibersegurança, formação em andamento na 42 Rio e projetos autorais com IA. A comunicação não deve ser reduzida a uma vaga específica.
 
 ## Como ler
 
@@ -35,7 +35,7 @@ As amostras de Sidebar, ThemeToggle, ActionLink, ProjectCard, ProjectCover, Proj
 - Claro: Cream, Ink Black e Burnt Orange.
 - Escuro: Charcoal, Sand e Electric Blue.
 - Fundo Sand sob o retrato, nos dois modos.
-- Menu: Home → About → Portfolio → Blog → Services.
+- Menu: Home → About → Resume → Portfolio → Blog → Services.
 - Home: Abertura → About → Portfolio → Blog → Services (CTA). Páginas internas aprofundam cada assunto.
 - Next.js App Router, TypeScript, Tailwind e GitHub Actions.
 - Componentes compartilhados e conteúdo separado do layout.

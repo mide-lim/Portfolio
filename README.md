@@ -1,6 +1,6 @@
 # midelim.com — Portfólio de Michel Marques
 
-Portfólio pessoal para apresentar minha trajetória em Segurança da Informação, formação na 42 Rio e projetos autorais com IA.
+Portfólio pessoal para apresentar minha trajetória em Cibersegurança, suporte de TI, formação na 42 Rio e projetos autorais com IA.
 
 [Site em desenvolvimento](https://midelim-portfolio-preview.creamgown2.chatgpt.site/) · [Histórico](CHANGELOG.md) · [Contexto de continuidade](docs/CONTEXTO-ATUAL.md)
 
@@ -58,11 +58,11 @@ O `index.html` na raiz é um arquivo legado de outra prévia; não é usado pelo
 
 ## Navegação
 
-Menu: Home → About → Portfolio → Blog → Services.
+Menu: Home → About → Resume → Portfolio → Blog → Services.
 
 Seções da Home: Abertura → About → Portfolio → Blog → Services (CTA).
 
-Rotas: `/`, `/about/`, `/portfolio/`, `/blog/`, `/services/` e `/portfolio/[slug]/`.
+Rotas: `/`, `/about/`, `/resume/`, `/portfolio/`, `/blog/`, `/services/` e `/portfolio/[slug]/`.
 
 Os seis projetos iniciais são MEGA-BRAIN, Cub3D, Minishell, Webserv, Philosophers e Inception. Links antigos por hash continuam encaminhando para as páginas correspondentes. As capas dos projetos continuam ilustrativas e as pautas do Blog estão identificadas como conteúdo em preparação.
 
@@ -92,7 +92,7 @@ Os textos foram preservados durante a migração para permitir uma revisão edit
 - Detalhar minha contribuição em projetos feitos em equipe.
 - Desenvolver estudos de caso, artigos e o conteúdo de Services.
 
-Markdown/MDX pode ser acrescentado quando os artigos e estudos de caso longos forem preparados. Currículo, contatos e experiência profissional também serão incorporados nessa etapa.
+Markdown/MDX pode ser acrescentado quando os artigos e estudos de caso longos forem preparados. Resume reúne experiência, formação, projetos, conhecimentos, idiomas e contatos fornecidos por Michel.
 
 ## Verificação
 

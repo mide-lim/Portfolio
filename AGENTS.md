@@ -14,7 +14,7 @@ Este repositório integra o projeto Curriculo + Processo Seletivo. O portfólio 
 - A Home segue Abertura → About → Portfolio → Blog → Services (CTA). Perfil, menu e rodapé são globais nas páginas do portfólio; o DS usa estrutura própria.
 - Consulte `src/content/design-standards.ts` e `docs/design-system/movimento.md` ao alterar tipografia, geometria ou animação.
 - Registre por peça: átomos/composição, fontes, medidas, comportamento responsivo, movimento e comunicação. Agrupe no DS também por navegação.
-- Preserve as duas paletas e a ordem Home, About, Portfolio, Blog, Services, salvo pedido de mudança.
+- Preserve as duas paletas e a ordem Home, About, Resume, Portfolio, Blog, Services, salvo pedido de mudança.
 - Siga 60/30/10 como referência de composição: base, secundária e destaque. Concentre o destaque em ações/estados; preserve contraste e a fotografia, sem alegar proporções de pixels medidas.
 - Use tokens semânticos: `background`, `surface`, `foreground`, `primary`, `primary-foreground`. Use os aliases existentes apenas ao manter CSS legado.
 - Reutilize `ActionLink`, `ProjectCard`, `ProjectCover`, `ProjectFilter`, `Header`, `Sidebar` e `ThemeToggle` quando aplicáveis.

@@ -4,7 +4,7 @@ Atualizado em 13/11/2026. Este documento é um ponto de partida para pessoas e a
 
 ## Objetivo e escopo
 
-Portfólio pessoal de Michel Marques para apresentar toda a trajetória: Segurança da Informação, formação em andamento na 42 Rio, engenharia de software, IA e projetos autorais. Deve atender oportunidades profissionais sem se limitar à apresentação para uma vaga. Prioridade no domínio midelim.com; midelim.tech fica fora do escopo atual.
+Portfólio pessoal de Michel Marques para apresentar toda a trajetória: Cibersegurança, experiência em suporte de TI, formação em andamento na 42 Rio, engenharia de software, IA e projetos autorais. Deve atender oportunidades profissionais sem se limitar à apresentação para uma vaga. Prioridade no domínio midelim.com; midelim.tech fica fora do escopo atual.
 
 - GitHub: https://github.com/mide-lim/Portfolio
 - Prévia de trabalho: https://midelim-portfolio-preview.creamgown2.chatgpt.site/
@@ -15,7 +15,7 @@ Portfólio pessoal de Michel Marques para apresentar toda a trajetória: Seguran
 ## Preferências e decisões
 
 - A Home é longa e resume os destaques; as páginas internas aprofundam cada assunto.
-- Menu: Home → About → Portfolio → Blog → Services. Seções da Home: Abertura → About → Portfolio → Blog → Services (CTA).
+- Menu: Home → About → Resume → Portfolio → Blog → Services. Seções da Home: Abertura → About → Portfolio → Blog → Services (CTA).
 - Mostrar MEGA-BRAIN e projetos da 42; Michel pretende melhorar gradualmente cada repositório.
 - Revisar a comunicação junto com Michel: ele considera os textos atuais genéricos e com aparência de texto gerado por IA. Priorizar primeira pessoa, detalhes concretos e fatos confirmados; não inventar conquistas, métricas ou contribuições individuais.
 - As referências visuais discutidas não devem voltar ao README público por enquanto.
@@ -90,3 +90,7 @@ O GitHub é a linha do tempo versionada. A prévia usa um repositório de origem
 ## Atualização da Home · 15/11/2026
 
 Michel forneceu a nova apresentação pessoal, aplicada após revisão de pontuação e sintaxe. O componente HeroBottom agrupa áreas de interesse e o acesso à trajetória. Hover e foco usam o destaque do tema; setas de navegação têm deslocamento conforme a direção e respeitam movimento reduzido. Revisar visualmente desktop/celular e os dois temas.
+
+## Atualização de About e Resume · 15/11/2026
+
+Michel forneceu o currículo e pediu sua publicação no site, com Resume após About no menu. Formação: Cibersegurança, UniCarioca, concluída em 2026; 42 Rio desde setembro de 2024, em andamento, com 87% do Common Core no histórico de novembro de 2026. Na Faculdade Souza Marques: estagiário de TI de agosto de 2023 a janeiro de 2025; especialista em suporte de TI desde janeiro de 2025, com mais de 800 chamados resolvidos. A página Resume inclui experiência, formação, projetos, conhecimentos, idiomas e contatos fornecidos por Michel. About também foi atualizada. A Home mantém sua ordem de seções anterior. O conteúdo do currículo fica em `src/content/resume.ts`.

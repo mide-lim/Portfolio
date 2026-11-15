@@ -1,5 +1,12 @@
 # Histórico de desenvolvimento
 
+## 2026-11-15 · About e Resume
+
+- Criada página Resume com experiência, formação, projetos, conhecimentos, idiomas e contatos.
+- Atualizada About com Cibersegurança, 42 Rio e experiência profissional.
+- Resume incluído após About no menu e no catálogo do DS.
+
+
 ## 2026-11-15 · Abertura e interação
 
 - Atualizada a comunicação da Home com o texto indicado por Michel.

@@ -253,7 +253,7 @@ export const componentSpecs: Record<
   },
   "pagina-interna": {
     atoms: ["Identificador", "H1", "Introdução"],
-    type: "H1 internas + introdução; mesma família em About, Portfolio, Blog e Services.",
+    type: "H1 internas + introdução; mesma família em About, Resume, Portfolio, Blog e Services.",
     geometry: "Padding 75 px acima / 65 abaixo; até 800: 50 acima.",
     motion:
       "Abertura aparece imediatamente; não bloquear a leitura com reveal.",
@@ -310,6 +310,7 @@ export const componentGroups = [
     label: "About",
     items: ["pagina-interna", "biografia", "formacao", "competencias"],
   },
+  { id: "resume", label: "Resume", items: ["pagina-interna"] },
   {
     id: "portfolio",
     label: "Portfolio",

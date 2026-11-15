@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowText } from "@/components/ui/arrow-text";
 import { about as copy } from "@/content/pages";
+import { ActionLink } from "@/components/ui/action-link";
 export const metadata = { title: "About" };
 
 export default function Page() {
@@ -32,6 +33,16 @@ export default function Page() {
           <p>{copy.sou_graduado_em_seguranca_da_informacao}</p>
           <p>{copy.nos_projetos_autorais_investigo_como_a}</p>
         </div>
+      </div>
+      <div className="section">
+        <span className="eyebrow">EXPERIÊNCIA PROFISSIONAL</span>
+        <h2>Aprender com<br /><em>pessoas e sistemas.</em></h2>
+        <div className="timeline"><article><span>AGO. 2023 — ATUAL</span><div>
+          <h3>Faculdade Souza Marques</h3>
+          <p>Comecei como estagiário de TI em agosto de 2023. Desde janeiro de 2025, atuo como especialista em suporte de TI, atendendo usuários e trabalhando com infraestrutura, equipamentos e chamados.</p>
+          <p>No suporte presencial e remoto, resolvi mais de 800 chamados e acompanho incidentes de hardware e software, provisionamento e documentação.</p>
+          <ActionLink variant="text" href="/resume/">Ver experiência completa →</ActionLink>
+        </div></article></div>
       </div>
       <div className="section">
         <span className="eyebrow">{copy.formacao_pratica}</span>

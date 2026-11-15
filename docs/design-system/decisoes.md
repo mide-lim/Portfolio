@@ -20,7 +20,7 @@ Atualizado em 13/11/2026. Esta é a pauta para organizar o sistema em conjunto.
 
 Claro: Cream #F3EEE3, Ink Black #111111, Burnt Orange #D9541E. Escuro: Charcoal #1E1E1C, Sand #D8CBB3, Electric Blue #2F6BFF. Retrato com Sand em ambos os modos.
 
-Menu: Home, About, Portfolio, Blog, Services. A Home resume; as demais páginas aprofundam. O site apresenta a trajetória completa.
+Menu atual: Home, About, Resume, Portfolio, Blog, Services. A Home resume; as demais páginas aprofundam. O site apresenta a trajetória completa.
 
 ## DS-02 · Sistema inicial
 
@@ -79,3 +79,7 @@ O catálogo mostra os padrões compartilhados e as exceções existentes, sem al
 Atualizadas as frentes, adicionados ícones e contatos, realce de hover/foco somente no perfil e animação da seta no CTA com respeito a movimento reduzido. Discord permanece sem destino confirmado. O monograma M com sinais de código é uma proposta implementada para avaliação, não uma marca final aprovada.
 
 A primeira imagem de pixel art escolhida para favicon ainda não foi aplicada devido à falha de recuperação do arquivo. Ver [contexto de continuidade](../CONTEXTO-ATUAL.md).
+
+## DS-10 · About e Resume · 15/11/2026
+
+Michel pediu atualização com os dados do currículo e uma página Resume depois de About. Home mantém a ordem de seções; o menu inclui Resume. As informações de formação, experiência, projetos e contatos foram fornecidas diretamente por Michel. O percentual da 42 é datado pelo histórico, não um dado atualizado em tempo real.

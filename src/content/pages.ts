@@ -24,17 +24,17 @@ export const home = {
   um_percurso: "Um percurso.",
   muitas_conexoes: "Muitas conexões.",
   entender_como_as_coisas_funcionam_me:
-    "Entender como as coisas funcionam me levou da segurança da informação à construção de software. Hoje, essa curiosidade também orienta meus estudos em IA e organização do conhecimento.",
+    "Minha trajetória reúne suporte de TI, cibersegurança e desenvolvimento de software. Na 42 Rio e em projetos autorais, continuo aprendendo a construir e automatizar soluções.",
   formacao_superior: "FORMAÇÃO SUPERIOR",
-  seguranca_da_informacao: "Segurança da Informação",
-  desde_2024: "DESDE 2024",
+  seguranca_da_informacao: "Cibersegurança · UniCarioca",
+  desde_2024: "DESDE SETEMBRO DE 2024",
   "42_rio": "42 Rio",
   aprendizado_entre_pares_e_projetos_em:
     "Aprendizado entre pares e projetos em C e C++.",
   projetos_autorais: "PROJETOS AUTORAIS",
   ia_aplicada: "IA aplicada",
   processamento_multimodal_e_organizacao_de_acervos:
-    "Processamento multimodal e organização de acervos.",
+    "Automação e processamento de conteúdo audiovisual.",
   explore_minha_trajetoria: "Explore minha trajetória →",
   blog: "BLOG",
   aprender: "Aprender.",
@@ -60,23 +60,23 @@ export const about = {
   por_tras: "por trás",
   do_codigo: "do código.",
   seguranca_da_informacao_formacao_pratica_na:
-    "Segurança da informação, formação prática na 42 Rio e projetos autorais que aproximam software e conhecimento.",
+    "Cibersegurança, experiência em suporte de TI, formação prática na 42 Rio e projetos autorais de software.",
   michel: "Michel",
   marques: "Marques.",
   minha_trajetoria_passa_por_compreender_sistemas:
-    "Minha trajetória passa por compreender sistemas, construir ferramentas e explorar formas de organizar informação.",
+    "Minha trajetória começou no suporte de TI e segue na construção de software, com interesse em segurança, automação e inteligência artificial.",
   sou_graduado_em_seguranca_da_informacao:
-    "Sou graduado em Segurança da Informação e estudo engenharia de software na 42 Rio. Aprender por meio de projetos me coloca diante de problemas concretos, da gestão de memória em C à concorrência e à infraestrutura de aplicações.",
+    "Sou formado em Cibersegurança pela UniCarioca e estudo Engenharia de Software na 42 Rio desde setembro de 2024. Na Faculdade Souza Marques, comecei como estagiário de TI em agosto de 2023 e atuo como especialista em suporte desde janeiro de 2025.",
   nos_projetos_autorais_investigo_como_a:
-    "Nos projetos autorais, investigo como a IA pode ajudar a transformar conteúdo disperso em conhecimento acessível. O MEGA-BRAIN faz parte dessa exploração.",
+    "Em projetos autorais como o MEGA-BRAIN, exploro automação e inteligência artificial aplicada ao processamento de conteúdo audiovisual.",
   formacao_pratica: "FORMAÇÃO & PRÁTICA",
   uma_trajetoria: "Uma trajetória",
   em_desenvolvimento: "em desenvolvimento.",
   graduacao: "GRADUAÇÃO",
-  seguranca_da_informacao: "Segurança da Informação",
+  seguranca_da_informacao: "Cibersegurança · UniCarioca",
   o_ponto_de_partida_da_minha:
-    "O ponto de partida da minha formação em tecnologia.",
-  "2024_atual": "2024 — ATUAL",
+    "Graduação concluída em 2026.",
+  "2024_atual": "SET. 2024 — ATUAL",
   "42_rio_engenharia_de_software": "42 Rio · Engenharia de software",
   common_core_em_andamento_com_87:
     "Common Core em andamento, com 87% de conclusão no histórico de novembro de 2026. Projetos em programação de sistemas, gráficos, redes, C++ e infraestrutura.",
@@ -85,9 +85,9 @@ export const about = {
   unix: "Unix",
   docker: "Docker",
   projetos_autorais: "PROJETOS AUTORAIS",
-  ia_organizacao_do_conhecimento: "IA & organização do conhecimento",
+  ia_organizacao_do_conhecimento: "IA & automação",
   estudos_e_experimentos_com_analise_multimodal:
-    "Estudos e experimentos com análise multimodal e organização de informação, incluindo o MEGA-BRAIN.",
+    "Estudos e experimentos com automação e análise de conteúdo audiovisual, incluindo o MEGA-BRAIN.",
   competencias_em_contexto: "COMPETÊNCIAS EM CONTEXTO",
   aprendizado: "Aprendizado",
   que_aparece_nos_projetos: "que aparece nos projetos.",
