@@ -7,6 +7,7 @@ export function Footer() {
         midelim<span>.</span>com
       </Link>
       <span>Michel Marques · Rio de Janeiro</span>
+      <Link href="/design-system/">Design System</Link>
       <Link href="/"><ArrowText>{"Voltar ao início ↑"}</ArrowText></Link>
     </footer>
   );

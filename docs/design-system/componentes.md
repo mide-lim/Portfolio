@@ -1,6 +1,6 @@
 # Catálogo de componentes
 
-[Guia com amostras reais](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/#perfil)
+[Guia com amostras reais](https://midelim.com/design-system/#perfil)
 
 Os fundamentos aparecem antes da oficina. O catálogo tem 21 peças, organizadas por Globais, Home, About, Resume, Portfolio, Blog e Services.
 
@@ -20,7 +20,7 @@ Home: Abertura → About → Portfolio → Blog → Services (CTA). About inclui
 | `project-cover.tsx` | Capa ilustrativa | `mb`, `cube`, `terminal`, `web`, `philo`, `infra` | Dentro do card e estudo de caso |
 | `project-grid.tsx` | Conjunto de projetos | `featured` mostra os quatro primeiros | Home |
 | `project-filter.tsx` | Catálogo filtrável | Todos, Autorais & IA, 42 Rio, Sistemas; `aria-pressed` | Portfolio |
-| `footer.tsx` | Fechamento e retorno | Links de navegação | Rodapé |
+| `footer.tsx` | Fechamento, design system e retorno | Link para `/design-system/` e navegação | Rodapé |
 | `page-effects.tsx` | Progresso, entrada e links antigos | Movimento reduzido; limpeza dos observadores | Layout global |
 
 ## ActionLink: quando usar

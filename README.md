@@ -2,11 +2,11 @@
 
 Portfólio pessoal para apresentar minha trajetória em Cibersegurança, suporte de TI, formação na 42 Rio e projetos autorais com IA.
 
-[Site em desenvolvimento](https://midelim-portfolio-preview.creamgown2.chatgpt.site/) · [Histórico](CHANGELOG.md) · [Contexto de continuidade](docs/CONTEXTO-ATUAL.md)
+[Acessar o portfólio](https://midelim.com/) · [Histórico](CHANGELOG.md) · [Contexto de continuidade](docs/CONTEXTO-ATUAL.md)
 
 ## Design system
 
-[Guia visual com exemplos](https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/) · [Documentação do sistema](DESIGN.md)
+[Guia visual com exemplos](https://midelim.com/design-system/) · [Documentação do sistema](DESIGN.md)
 
 O DS começa pelos fundamentos: fontes, tipografia, espaçamento, grid, stickers, cores, animações e comunicação. Em seguida, reúne 21 peças por página, com átomos/composição, medidas, amostras, distribuição 60/30/10 e pontos de revisão. A documentação distingue o aprovado, o implementado e as propostas para revisão conjunta.
 
@@ -79,9 +79,7 @@ DM Sans e Space Grotesk são carregadas pelo Google Fonts. Movimento reduzido re
 
 ## Publicação
 
-A prévia atual é publicada a partir de `out/`. O GitHub Actions valida testes, compilação, tipos e links internos e guarda o build como artefato.
-
-Para a Vercel: importar este repositório, selecionar Next.js, usar a raiz do projeto, `pnpm install --frozen-lockfile` e `pnpm build`. A conexão com a conta Vercel e o DNS de midelim.com ainda precisam ser configurados. Não há credenciais de deploy no repositório.
+O portfólio está publicado na Vercel em [midelim.com](https://midelim.com/), conectado a este repositório. A branch principal gera a versão de produção. O GitHub Actions valida testes, compilação, tipos e links internos e guarda o build como artefato. A prévia de trabalho possui acesso separado. Não há credenciais de deploy no repositório.
 
 ## Próxima etapa: comunicação
 

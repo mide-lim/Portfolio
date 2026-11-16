@@ -1,16 +1,16 @@
 # Contexto de continuidade · midelim.com
 
-Atualizado em 13/11/2026. Este documento é um ponto de partida para pessoas e agentes em outro ambiente. Verifique o HEAD e o estado real antes de agir: decisões e publicações podem mudar.
+Atualizado em 16/11/2026. Este documento é um ponto de partida para pessoas e agentes em outro ambiente. Verifique o HEAD e o estado real antes de agir: decisões e publicações podem mudar.
 
 ## Objetivo e escopo
 
 Portfólio pessoal de Michel Marques para apresentar toda a trajetória: Cibersegurança, experiência em suporte de TI, formação em andamento na 42 Rio, engenharia de software, IA e projetos autorais. Deve atender oportunidades profissionais sem se limitar à apresentação para uma vaga. Prioridade no domínio midelim.com; midelim.tech fica fora do escopo atual.
 
 - GitHub: https://github.com/mide-lim/Portfolio
-- Prévia de trabalho: https://midelim-portfolio-preview.creamgown2.chatgpt.site/
-- Design system: https://midelim-portfolio-preview.creamgown2.chatgpt.site/design-system/
-- Vercel e DNS: ainda não conectados conforme os registros do projeto. Não afirmar que midelim.com está publicado sem verificar.
-- A prévia usa controle de acesso próprio. Não alterar a audiência sem pedido explícito.
+- Site de produção: https://midelim.com/
+- Design system: https://midelim.com/design-system/ (público; link no rodapé).
+- Produção na Vercel conectada ao GitHub; DNS do domínio configurado na Hostinger. Verifique o estado antes de mudanças.
+- A prévia de trabalho no ChatGPT é separada e particular. Não alterar sua audiência ou expor seu endereço sem pedido explícito.
 
 ## Preferências e decisões
 

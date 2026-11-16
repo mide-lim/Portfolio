@@ -1,5 +1,11 @@
 # Histórico de desenvolvimento
 
+## 2026-11-16 · Domínio e Design System
+
+- Documentado o portfólio em midelim.com e a publicação na Vercel.
+- Incluído no rodapé o link para o Design System em /design-system/.
+- Mantida a prévia de trabalho do ChatGPT com acesso particular.
+
 ## 2026-11-15 · About e Resume
 
 - Criada página Resume com experiência, formação, projetos, conhecimentos, idiomas e contatos.
